@@ -6,7 +6,7 @@ import logo from "../images/logo.png";
 import Container from "./Container";
 import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
-import TopNavbar from "../components/TopNavbar";
+import TopNav from "../components/TopNav";
 
 interface NavLinkProps {
   label: string;
@@ -51,21 +51,25 @@ const Header: React.FC = () => {
         className="w-full h-[100vh]  object-cover"
       />
       <main className="fixed right-0 top-0 z-[9999] w-full   text-white">
-        <TopNavbar />
+        <TopNav />
         <Container>
           <nav className="  flex    items-center justify-between  ">
             <div>
               <Link to="/">
-                <img src={logo} alt="Logo" className="w-[283px] h-[64px]" />
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="lg:w-[283px] h-[64px] w-[180px] object-contain "
+                />
               </Link>
             </div>
             <div className=" hidden md:block">
-              <div className="flex gap-7">
+              <div className="flex md:gap-3 gap-4 lg:gap-8">
                 {navLinks.map((data, idx) => (
                   <div key={idx}>
                     <li className="list-none">
                       <NavLink
-                        className="text-[18px] font-normal"
+                        className="text-[14px] lg:text-[16px] hover:border-b hover:border-secondary font-normal transition-all"
                         to={data.link}
                       >
                         {data.label}
@@ -92,21 +96,24 @@ const Header: React.FC = () => {
                   <NavLink
                     onClick={() => setClick(false)}
                     key={i}
-                    className="w-full border-b border-dashed font-bold"
+                    className="w-full   font-bold"
                     to={data.link}
                   >
                     {data.label}
                   </NavLink>
                 ))}
-                <div className="flex w-full items-center gap-3 border-b border-dashed">
+                <div className=" md:flex hidden w-full items-center gap-3  ">
                   <FaRegMessage /> Request Consultation
                 </div>
               </div>
             </div>
 
             <div className="hidden md:block">
-              <div className="flex items-center gap-3   ">
-                <FaRegMessage /> Request Consultation
+              <div className="flex items-center gap-2 lg:gap-[10px]   ">
+                <FaRegMessage size={18} />{" "}
+                <span className="text-[14px] lg:text-[16px] font-semibold">
+                  Request Consultation
+                </span>
               </div>
             </div>
             <div

@@ -2,7 +2,7 @@ import { BiCalendar, BiPhone } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import Container from "../shared/Container";
 
-const TopNavbar = () => {
+const TopNav = () => {
   return (
     <div className="border-b border-secondary md:block hidden">
       <Container>
@@ -26,4 +26,4 @@ const TopNavbar = () => {
   );
 };
 
-export default TopNavbar;
+export default TopNav;
