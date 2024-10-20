@@ -1,4 +1,5 @@
 import AboutUs from "./pages/AboutUs";
+import ClientSatisfactionRate from "./pages/ClientSatisfactionRate";
 import Companies from "./pages/Companies";
 import Footer from "./shared/Footer";
 import Navbar from "./shared/Navbar";
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Companies />
       <AboutUs />
+      <ClientSatisfactionRate />
       <Footer />
     </div>
   );
