@@ -1,7 +1,21 @@
+import AboutUs from "./pages/AboutUs";
+import ClientSatisfactionRate from "./pages/ClientSatisfactionRate";
+import Companies from "./pages/Companies";
+import ContactUs from "./pages/ContactUs";
+import OurTeams from "./pages/OurTeams";
+import Footer from "./shared/Footer";
+import Navbar from "./shared/Navbar";
+
 const App = () => {
   return (
     <div className="font-playfair">
-      <h1 className="text-center">Hello Nextus Lawfire</h1>
+      <Navbar />
+      <Companies />
+      <AboutUs />
+      <ClientSatisfactionRate />
+      <OurTeams />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };
