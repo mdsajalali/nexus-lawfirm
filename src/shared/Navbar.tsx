@@ -8,41 +8,10 @@ import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";
 import Hero from "../pages/Hero";
-import { BiMessage, BiPhone } from "react-icons/bi";
+import navLinks from "../components/navItems";
+import HeroSidebar from "../components/HeroSidebar";
 
-interface NavLinkProps {
-  label: string;
-  link: string;
-}
-
-const navLinks: NavLinkProps[] = [
-  {
-    label: "Home",
-    link: "/",
-  },
-  {
-    label: "About",
-    link: "/about",
-  },
-  {
-    label: "Practice Areas",
-    link: "/skills",
-  },
-  {
-    label: "Attorneys",
-    link: "/projects",
-  },
-  {
-    label: "Blog",
-    link: "/blogs",
-  },
-  {
-    label: "Contact",
-    link: "/contact",
-  },
-];
-
-const Header: React.FC = () => {
+const Header = () => {
   const [click, setClick] = useState(false);
 
   return (
@@ -67,7 +36,7 @@ const Header: React.FC = () => {
             </div>
             <div className=" hidden md:block">
               <div className="flex md:gap-3 gap-4 lg:gap-8">
-                {navLinks.map((data, idx) => (
+                {navLinks?.map((data, idx) => (
                   <div key={idx}>
                     <li className="list-none">
                       <NavLink
@@ -126,15 +95,12 @@ const Header: React.FC = () => {
               <FiMenu size={30} />
             </div>
           </nav>
+
+          {/* Hero Section */}
           <Hero />
-          <div className="  hidden md:flex items-center gap-1 flex-col absolute bottom-0 right-3">
-            <div className="bg-primary p-2 hover:bg-white transition-all cursor-pointer rounded-full ">
-              <BiPhone size={22} className="text-secondary" />
-            </div>
-            <div className="bg-primary p-2 hover:bg-white transition-all cursor-pointer rounded-full ">
-              <BiMessage size={22} className="text-secondary" />
-            </div>
-          </div>
+
+          {/* Hero Sidebar */}
+          <HeroSidebar />
         </Container>
       </main>
     </div>
