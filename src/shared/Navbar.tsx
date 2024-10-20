@@ -21,7 +21,7 @@ const Header = () => {
         alt="Hero Banner"
         className="w-full h-[100vh]  object-cover"
       />
-      <main className="fixed right-0 top-0 z-[9999] w-full   text-white">
+      <main className="absolute right-0 top-0 z-[9999] w-full   text-white">
         <TopNav />
         <Container>
           <nav className="  flex    items-center justify-between  ">
