@@ -1,6 +1,7 @@
 import AboutUs from "./pages/AboutUs";
 import ClientSatisfactionRate from "./pages/ClientSatisfactionRate";
 import Companies from "./pages/Companies";
+import OurTeams from "./pages/OurTeams";
 import Footer from "./shared/Footer";
 import Navbar from "./shared/Navbar";
 
@@ -11,6 +12,7 @@ const App = () => {
       <Companies />
       <AboutUs />
       <ClientSatisfactionRate />
+      <OurTeams />
       <Footer />
     </div>
   );
