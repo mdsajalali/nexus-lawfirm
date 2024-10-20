@@ -27,14 +27,29 @@ const Companies = () => {
           loop={true}
           speed={400}
           autoplay={{ delay: 2000 }}
-          slidesPerView={5}
+          slidesPerView="auto"
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+            },
+            640: {
+              slidesPerView: 4,
+            },
+            768: {
+              slidesPerView: 5,
+            },
+          }}
         >
           {companies.map((item) => (
             <SwiperSlide
               className="flex justify-center items-center "
               key={item.alt}
             >
-              <img src={item.src} alt={item.alt} className=" " />
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-[110px] md:w-[201px] h-5 md:h-[46px] object-contain"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
