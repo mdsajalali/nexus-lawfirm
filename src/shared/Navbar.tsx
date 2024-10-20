@@ -6,6 +6,7 @@ import logo from "../images/logo.png";
 import Container from "./Container";
 import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
+import TopNavbar from "../components/TopNavbar";
 
 interface NavLinkProps {
   label: string;
@@ -49,9 +50,10 @@ const Header: React.FC = () => {
         alt="Hero Banner"
         className="w-full h-[100vh]  object-cover"
       />
-      <main className="fixed right-0 top-0 z-[9999] w-full border-b border-secondary  text-white">
+      <main className="fixed right-0 top-0 z-[9999] w-full   text-white">
+        <TopNavbar />
         <Container>
-          <nav className="  flex   items-center justify-between  ">
+          <nav className="  flex    items-center justify-between  ">
             <div>
               <Link to="/">
                 <img src={logo} alt="Logo" className="w-[283px] h-[64px]" />
