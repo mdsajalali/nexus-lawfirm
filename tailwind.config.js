@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#0F1B23",
+        secondary: "#B98D44",
       },
       fontFamily: {
         playfair: ["Playfair Display", "sans-serif"],
