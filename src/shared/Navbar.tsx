@@ -7,6 +7,8 @@ import Container from "./Container";
 import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";
+import Hero from "../pages/Hero";
+import { BiMessage, BiPhone } from "react-icons/bi";
 
 interface NavLinkProps {
   label: string;
@@ -69,7 +71,7 @@ const Header: React.FC = () => {
                   <div key={idx}>
                     <li className="list-none">
                       <NavLink
-                        className="text-[14px] lg:text-[16px] hover:border-b hover:border-secondary font-normal transition-all"
+                        className="text-[14px] lg:text-[16px] hover:border-b hover:border-secondary font-normal transition-all font-opensans"
                         to={data.link}
                       >
                         {data.label}
@@ -103,7 +105,8 @@ const Header: React.FC = () => {
                   </NavLink>
                 ))}
                 <div className=" md:flex hidden w-full items-center gap-3  ">
-                  <FaRegMessage /> Request Consultation
+                  <FaRegMessage />
+                  <span className="font-opensans">Request Consultation</span>
                 </div>
               </div>
             </div>
@@ -111,7 +114,7 @@ const Header: React.FC = () => {
             <div className="hidden md:block">
               <div className="flex items-center gap-2 lg:gap-[10px]   ">
                 <FaRegMessage size={18} />{" "}
-                <span className="text-[14px] lg:text-[16px] font-semibold">
+                <span className="text-[14px] lg:text-[16px] font-semibold font-opensans">
                   Request Consultation
                 </span>
               </div>
@@ -123,6 +126,15 @@ const Header: React.FC = () => {
               <FiMenu size={30} />
             </div>
           </nav>
+          <Hero />
+          <div className="  hidden md:flex items-center gap-1 flex-col absolute bottom-0 right-3">
+            <div className="bg-primary p-2 hover:bg-white transition-all cursor-pointer rounded-full ">
+              <BiPhone size={22} className="text-secondary" />
+            </div>
+            <div className="bg-primary p-2 hover:bg-white transition-all cursor-pointer rounded-full ">
+              <BiMessage size={22} className="text-secondary" />
+            </div>
+          </div>
         </Container>
       </main>
     </div>
