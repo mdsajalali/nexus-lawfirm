@@ -151,7 +151,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="p-2 rounded-md border outline-none text-[14px] lg:w-full"
+                  className="p-2 rounded-md border outline-none text-[12px] font-opensans lg:w-full"
                 />
                 <MdEmail
                   size={20}
