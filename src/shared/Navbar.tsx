@@ -10,9 +10,16 @@ import TopNav from "../components/TopNav";
 import Hero from "../pages/Hero";
 import navLinks from "../components/navItems";
 import HeroSidebar from "../components/HeroSidebar";
+import ScheduleConsultationModal from "../components/ScheduleConsultationModal";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="relative">
@@ -80,14 +87,18 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="hidden md:block">
+            <div
+              onClick={() => setIsOpen(true)}
+              className="hidden md:block cursor-pointer "
+            >
               <div className="flex items-center gap-2 lg:gap-[10px]   ">
-                <FaRegMessage size={18} />{" "}
+                <FaRegMessage size={18} />
                 <span className="text-[14px] lg:text-[16px] font-semibold font-opensans">
                   Request Consultation
                 </span>
               </div>
             </div>
+            <ScheduleConsultationModal isOpen={isOpen} onClose={handleClose} />
             <div
               onClick={() => setClick(true)}
               className="block cursor-pointer md:hidden"
