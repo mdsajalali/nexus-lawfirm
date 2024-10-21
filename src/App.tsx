@@ -1,4 +1,5 @@
 import AboutUs from "./pages/AboutUs";
+import Clients from "./pages/Clients";
 import ClientSatisfactionRate from "./pages/ClientSatisfactionRate";
 import Companies from "./pages/Companies";
 import ContactUs from "./pages/ContactUs";
@@ -15,6 +16,7 @@ const App = () => {
       <AboutUs />
       <ClientSatisfactionRate />
       <OurTeams />
+      <Clients />
       <ContactUs />
       <ScheduleConsultation />
       <Footer />
