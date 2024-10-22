@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import PracticeAreas from "./pages/PracticeAreas/PracticeAreas";
 import Attorneys from "./pages/Attorneys/Attorneys";
+import TermsService from "./pages/TermsService/TermsService";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<PracticeAreas />} />
         <Route path="/projects" element={<Attorneys />} />
+        <Route path="/terms" element={<TermsService />} />
       </Routes>
       <Footer />
     </div>
