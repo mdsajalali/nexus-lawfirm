@@ -2,6 +2,7 @@ import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/practice-area/practice_areas_banner.png";
 import ScheduleConsultation from "../ScheduleConsultation";
 import Legal_Expertise from "./Legal_Expertise";
+import Faq from "./Faq";
 
 const PracticeAreas = () => {
   return (
@@ -13,6 +14,7 @@ const PracticeAreas = () => {
         bread_link="practice-areas"
       />
       <Legal_Expertise />
+      <Faq />
       <ScheduleConsultation />
     </div>
   );
