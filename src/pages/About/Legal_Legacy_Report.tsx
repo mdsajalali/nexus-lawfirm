@@ -1,10 +1,15 @@
 import Container from "../../shared/Container";
 import Legal_Legacy_img from "../../images/about/Legal_Legacy_img.png";
 import { IoMdCheckboxOutline } from "react-icons/io";
+import HeroSidebar from "../../components/HeroSidebar";
 
 const LegalLegacyReport = () => {
   return (
     <Container>
+      {/* Sidebar icons */}
+      <div className="xl:block hidden">
+        <HeroSidebar />
+      </div>
       <div className="pt-[30px] pb-14 md:py-[120px] grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 md:gap-[133px]">
         <div>
           <h1 className="text-2xl leading-[36px] text-center md:text-start md:text-[40px] font-semibold md:leading-[60px]">
