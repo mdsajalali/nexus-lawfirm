@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import PracticeAreas from "./pages/PracticeAreas/PracticeAreas";
 import Attorneys from "./pages/Attorneys/Attorneys";
 import TermsService from "./pages/TermsService/TermsService";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/skills" element={<PracticeAreas />} />
         <Route path="/projects" element={<Attorneys />} />
         <Route path="/terms" element={<TermsService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>

@@ -6,7 +6,7 @@ import Faq from "./Faq";
 
 const PracticeAreas = () => {
   return (
-    <div>
+    <>
       <SharedNavbar
         banner={banner}
         title="Legal Practice Areas"
@@ -16,7 +16,7 @@ const PracticeAreas = () => {
       <Legal_Expertise />
       <Faq />
       <ScheduleConsultation />
-    </div>
+    </>
   );
 };
 
