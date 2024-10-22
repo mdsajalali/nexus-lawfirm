@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/practice_areas_banner.png";
+import banner from "../../images/practice-area/practice_areas_banner.png";
 import ScheduleConsultation from "../ScheduleConsultation";
 import Legal_Expertise from "./Legal_Expertise";
 
