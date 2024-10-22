@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import Container from "../../shared/Container";
 
@@ -35,8 +35,8 @@ const faqData: FAQ[] = [
   },
 ];
 
-const Faq: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0); 
+const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -68,7 +68,9 @@ const Faq: React.FC = () => {
                 }`}
                 onClick={() => toggleFAQ(index)}
               >
-                <h1 className="font-opensans md:text-[16px] text-[14px] font-semibold">{faq.question}</h1>
+                <h1 className="font-opensans md:text-[16px] text-[14px] font-semibold">
+                  {faq.question}
+                </h1>
                 <IoIosArrowUp
                   className={`transition-transform duration-300 ${
                     activeIndex === index ? "rotate-180" : ""
