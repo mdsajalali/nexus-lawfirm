@@ -16,13 +16,13 @@ const Choose_Us = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-8 md:pt-16 gap-6">
           {chooseUsData?.map((data) => (
             <div
-              className="max-w-[312px] mx-auto hover:scale-90 transition-all shadow-md rounded-md py-14 md:py-[63px] px-[25px] text-center"
+              className="max-w-[312px] flex flex-col items-center justify-center mx-auto hover:scale-90 transition-all shadow-md rounded-md py-14 md:py-[63px] px-[25px] text-center"
               key={data?.id}
             >
               <img
                 src={data?.img}
                 alt="img"
-                className="object-cover  mx-auto"
+                className="object-content size-10 md:size-[64px]  mx-auto"
               />
               <h1 className="py-4 text-[20px] md:text-2xl font-semibold font-opensans">
                 {data?.title}

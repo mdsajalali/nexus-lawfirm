@@ -5,6 +5,7 @@ import Companies from "../Companies";
 import ScheduleConsultation from "../ScheduleConsultation";
 import ClientSatisfactionRate from "../ClientSatisfactionRate";
 import Choose_Us from "./Choose_Us";
+import LegalLegacyReport from "./Legal_Legacy_Report";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
         bread_text="about"
         bread_link="about"
       />
+      <LegalLegacyReport />
       <ClientSatisfactionRate />
       <Choose_Us />
       <Clients />
