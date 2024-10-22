@@ -4,15 +4,25 @@ import { IoCloseOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import Container from "./Container";
-import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";
-import Hero from "../pages/Hero";
 import navLinks from "../components/navItems";
-import HeroSidebar from "../components/HeroSidebar";
 import ScheduleConsultationModal from "../components/ScheduleConsultationModal";
+import Breadcrumbs from "../components/Breadcrumbs";
 
-const Navbar = () => {
+interface NavbarProps {
+  banner: string;
+  title: string;
+  bread_text: string;
+  bread_link: string;
+}
+
+const SharedNavbar = ({
+  banner,
+  title,
+  bread_text,
+  bread_link,
+}: NavbarProps) => {
   const [click, setClick] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +34,9 @@ const Navbar = () => {
   return (
     <div className="relative">
       <img
-        src={hero_banner}
+        src={banner}
         alt="Hero Banner"
-        className="w-full h-[100vh]  object-cover"
+        className="w-full md:h-[400px] h-[200px] object-cover"
       />
       <main className="absolute right-0 top-0 z-[9999] w-full   text-white">
         <TopNav />
@@ -106,16 +116,15 @@ const Navbar = () => {
               <FiMenu size={30} />
             </div>
           </nav>
-
-          {/* Hero Section */}
-          <Hero />
-
-          {/* Hero Sidebar */}
-          <HeroSidebar />
+          <h1 className="text-2xl md:text-[64px] font-opensans font-bold md:py-20 py-10">
+            {title}
+          </h1>
+          {/* Breadcrumbs */}
+          <Breadcrumbs bread_text={bread_text} bread_link={bread_link} />
         </Container>
       </main>
     </div>
   );
 };
 
-export default Navbar;
+export default SharedNavbar;

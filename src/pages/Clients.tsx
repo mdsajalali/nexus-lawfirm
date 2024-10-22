@@ -80,7 +80,7 @@ const Clients = () => {
                     <img
                       src={quote_icon}
                       alt="quote"
-                      className="absolute -bottom-6 right-0"
+                      className="absolute w-16 md:w-20 md:h-[62px] md:-bottom-[27px] -bottom-[17px] right-0"
                     />
                   </div>
                 </SwiperSlide>
