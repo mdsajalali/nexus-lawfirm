@@ -12,7 +12,7 @@ import navLinks from "../components/navItems";
 import HeroSidebar from "../components/HeroSidebar";
 import ScheduleConsultationModal from "../components/ScheduleConsultationModal";
 
-const Header = () => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -118,4 +118,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

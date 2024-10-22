@@ -1,26 +1,15 @@
-import AboutUs from "./pages/AboutUs";
-import Clients from "./pages/Clients";
-import ClientSatisfactionRate from "./pages/ClientSatisfactionRate";
-import Companies from "./pages/Companies";
-import ContactUs from "./pages/ContactUs";
-import OurTeams from "./pages/OurTeams";
-import PracticeAreas from "./pages/PracticeAreas";
-import ScheduleConsultation from "./pages/ScheduleConsultation";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./shared/Footer";
-import Navbar from "./shared/Navbar";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 const App = () => {
   return (
     <div className="font-playfair">
-      <Navbar />
-      <Companies />
-      <AboutUs />
-      <ClientSatisfactionRate />
-      <PracticeAreas />
-      <OurTeams />
-      <Clients />
-      <ContactUs />
-      <ScheduleConsultation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
     </div>
   );
