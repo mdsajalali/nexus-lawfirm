@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
+import RecentBlogs from "../../components/RecentBlogs";
+import { CiSearch } from "react-icons/ci";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -50,7 +52,16 @@ const Blogs = () => {
             <BlogsPagination />
           </div>
           <div className="col-span-4">
-            <h1>Another Content</h1>
+            <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
+              <input
+                type="text"
+                placeholder="Search"
+                className="text-[#D0D4D6] text-[14px] outline-none w-full"
+              />
+              <CiSearch size={20} className="text-[#3D4C56] cursor-pointer" />
+            </div>
+            {/* Recent Blogs */}
+            <RecentBlogs />
           </div>
         </div>
       </Container>
