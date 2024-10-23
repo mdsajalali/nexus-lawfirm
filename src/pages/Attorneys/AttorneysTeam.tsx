@@ -33,8 +33,8 @@ const AttorneysTeam = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 pt-4 md:pt-8 ">
-          {attorneys?.map((attorney, index) => (
-            <AttorneyCard key={index} {...attorney} />
+          {attorneys?.map((attorney) => (
+            <AttorneyCard key={attorney.id} {...attorney} />
           ))}
         </div>
       </div>
@@ -46,61 +46,73 @@ export default AttorneysTeam;
 
 const attorneys = [
   {
+    id: 1,
     name: "John Doe",
     title: "Criminal Law Attorney",
     image: attorney_one,
   },
   {
+    id: 2,
     name: "Jane Smith",
     title: "Family Law Attorney",
     image: attorney_two,
   },
   {
+    id: 3,
     name: "Robert Brown",
     title: "Business Law Specialist",
     image: attorney_three,
   },
   {
+    id: 4,
     name: "Emily Johnson",
     title: "Estate Planning Attorney",
     image: attorney_four,
   },
   {
+    id: 5,
     name: "Laura Green",
     title: "Juvenile Defense Attorney",
     image: attorney_five,
   },
   {
+    id: 6,
     name: "Christopher Lee",
     title: "Business Law Attorney",
     image: attorney_six,
   },
   {
+    id: 7,
     name: "Samantha Harris",
     title: "Employment Law Specialist",
     image: attorney_seven,
   },
   {
+    id: 8,
     name: "James Clark",
     title: "Medical Malpractice Attorney",
     image: attorney_eight,
   },
   {
+    id: 9,
     name: "Olivia Martinez",
     title: "Estate Planning Attorney",
     image: attorney_nine,
   },
   {
+    id: 10,
     name: "Daniel Thompson",
     title: "Real Estate Law Attorney",
     image: attorney_ten,
   },
   {
+    id: 11,
     name: "Isabella Robinson",
     title: "Immigration Law Specialist",
     image: attorney_eleven,
   },
   {
+    id: 12,
     name: "Matthew Wright",
     title: "Criminal Defense Attorney",
     image: attorney_twelve,
