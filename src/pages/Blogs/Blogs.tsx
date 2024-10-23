@@ -5,13 +5,18 @@ import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
 import RecentBlogs from "../../components/RecentBlogs";
-import { CiSearch } from "react-icons/ci";
 import BlogCategories from "../../components/BlogCategories";
 import ScheduleConsultation from "../ScheduleConsultation";
 import HeroSidebar from "../../components/HeroSidebar";
+import BlogsSearch from "../../components/BlogsSearch";
+
+interface Blog {
+  title: string;
+}
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -30,6 +35,10 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
+  const filteredBlogs = blogs.filter((blog: Blog) =>
+    blog.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
       <SharedNavbar
@@ -38,33 +47,31 @@ const Blogs = () => {
         bread_text="Blogs"
         bread_link="blogs"
       />
-      {/* Hero Sidebar */}
       <HeroSidebar />
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">
-              {blogs.length > 0 ? (
-                blogs
+              {filteredBlogs.length > 0 ? (
+                filteredBlogs
                   .slice(0, 6)
                   .map((blog, idx) => <BlogsCard key={idx} blog={blog} />)
               ) : (
-                <p>No blogs available.</p>
+                <p className="col-span-full text-center">
+                  No blogs found matching your search.
+                </p>
               )}
             </div>
             {/* Blog Pagination */}
             <BlogsPagination />
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
-            <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
-              <input
-                type="text"
-                placeholder="Search"
-                className="text-[#D0D4D6] text-[14px] outline-none w-full"
-              />
-              <CiSearch size={20} className="text-[#3D4C56] cursor-pointer" />
-            </div>
+            {/* Blogs Search */}
+            <BlogsSearch
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+            />
             {/* Recent Blogs */}
             <RecentBlogs />
             {/* Blog Categories */}
@@ -72,7 +79,6 @@ const Blogs = () => {
           </div>
         </div>
       </Container>
-      {/* Schedule Consultation */}
       <ScheduleConsultation />
     </>
   );
