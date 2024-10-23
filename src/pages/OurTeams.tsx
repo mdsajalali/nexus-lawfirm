@@ -13,8 +13,8 @@ const OurTeams = () => {
           Our Legal Experts
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 pt-8 md:pt-[100px]">
-          {attorneys?.map((attorney, index) => (
-            <AttorneyCard key={index} {...attorney} />
+          {attorneys?.map((attorney) => (
+            <AttorneyCard key={attorney.id} {...attorney} />
           ))}
         </div>
         <div className="flex items-center justify-center">
@@ -31,21 +31,25 @@ export default OurTeams;
 
 const attorneys = [
   {
+    id: 1,
     name: "John Doe",
     title: "Criminal Law Attorney",
     image: attorney_one,
   },
   {
+    id: 2,
     name: "Jane Smith",
     title: "Family Law Attorney",
     image: attorney_two,
   },
   {
+    id: 3,
     name: "Robert Brown",
     title: "Business Law Specialist",
     image: attorney_three,
   },
   {
+    id: 4,
     name: "Emily Johnson",
     title: "Estate Planning Attorney",
     image: attorney_four,
