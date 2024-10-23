@@ -1,5 +1,6 @@
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
+import BlogForm from "./BlogForm";
 
 interface WageRights {
   desc: string;
@@ -34,7 +35,11 @@ interface BlogCardProps {
 const BlogCard = ({ blog }: BlogCardProps) => {
   return (
     <div>
-      <img src={blog.img} alt="Blog" className=" w-full h-full object-cover" />
+      <img
+        src={blog.img}
+        alt="Blog"
+        className=" w-full h-[392px] rounded-md object-cover"
+      />
       <div className="flex flex-wrap items-center gap-2 md:gap-4 py-4 justify-center md:justify-start">
         <div className="flex items-center gap-2">
           <FaRegUser className="text-secondary" />
@@ -97,6 +102,9 @@ const BlogCard = ({ blog }: BlogCardProps) => {
         <h1 className="font-bold text-lg">Conclusion</h1>
         <p>{blog.conclusion}</p>
       </div>
+
+      {/* Blog Form */}
+      <BlogForm />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/images/blog/blog.png",
+    "img": "../src/images/blogs/blog_one.png",
     "name": "By Benjamin Cooper",
     "date": "24 May, 2024",
     "category": "Immigration law",
@@ -34,10 +34,10 @@
   },
   {
     "id": 2,
-    "img": "../src/images/blog/blog.png",
-    "name": "By Benjamin Cooper",
-    "date": "24 May, 2024",
-    "category": "Immigration law",
+    "img": "../src/images/blogs/blog_two.png",
+    "name": "By Evelyn Carter",
+    "date": "22 May, 2024",
+    "category": "Employment law",
     "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
     "wage_rights": [
       {
@@ -65,10 +65,10 @@
   },
   {
     "id": 3,
-    "img": "../src/images/blog/blog.png",
-    "name": "By Benjamin Cooper",
-    "date": "24 May, 2024",
-    "category": "Immigration law",
+    "img": "../src/images/blogs/blog_three.png",
+    "name": "By William Harrison",
+    "date": "02 May, 2024",
+    "category": "Real estate law",
     "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
     "wage_rights": [
       {
@@ -96,10 +96,10 @@
   },
   {
     "id": 4,
-    "img": "../src/images/blog/blog.png",
-    "name": "By Benjamin Cooper",
-    "date": "24 May, 2024",
-    "category": "Immigration law",
+    "img": "../src/images/blogs/blog_four.png",
+    "name": "By John Doe",
+    "date": "29 April, 2023",
+    "category": "Criminal law",
     "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
     "wage_rights": [
       {
@@ -127,10 +127,10 @@
   },
   {
     "id": 5,
-    "img": "../src/images/blog/blog.png",
-    "name": "By Benjamin Cooper",
-    "date": "24 May, 2024",
-    "category": "Immigration law",
+    "img": "../src/images/blogs/blog_five.png",
+    "name": "By Olivia Richardson",
+    "date": "16 April, 2024",
+    "category": "Personal injury",
     "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
     "wage_rights": [
       {
@@ -158,10 +158,10 @@
   },
   {
     "id": 6,
-    "img": "../src/images/blog/blog.png",
-    "name": "By Benjamin Cooper",
-    "date": "24 May, 2024",
-    "category": "Immigration law",
+    "img": "../src/images/blogs/blog_six.png",
+    "name": "By Sophia Martinez",
+    "date": "11 April, 2023",
+    "category": "Estate planning",
     "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
     "wage_rights": [
       {
