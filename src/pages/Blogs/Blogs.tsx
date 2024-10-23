@@ -26,6 +26,7 @@ const Blogs = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activePage, setActivePage] = useState<number>(1);
   const blogsPerPage = 6;
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -44,14 +45,18 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
-  const filteredBlogs = blogs.filter((blog) =>
-    blog.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredBlogs = blogs.filter((blog) => {
+    const matchesSearch = blog.title
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+    const matchesCategory =
+      selectedCategory === "All" || blog.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
 
   const indexOfLastBlog = activePage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
-
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
 
   return (
@@ -73,9 +78,7 @@ const Blogs = () => {
                   <BlogsCard key={idx} blog={blog} />
                 ))
               ) : (
-                <p className="col-span-full text-center">
-                  No blogs found matching your search.
-                </p>
+                <p className="col-span-full text-center">No blogs available.</p>
               )}
             </div>
             <BlogsPagination
@@ -90,7 +93,10 @@ const Blogs = () => {
               setSearchQuery={setSearchQuery}
             />
             <RecentBlogs />
-            <BlogCategories />
+            <BlogCategories
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+            />
           </div>
         </div>
       </Container>
