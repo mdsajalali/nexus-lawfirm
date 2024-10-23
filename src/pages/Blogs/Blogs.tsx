@@ -8,6 +8,7 @@ import RecentBlogs from "../../components/RecentBlogs";
 import { CiSearch } from "react-icons/ci";
 import BlogCategories from "../../components/BlogCategories";
 import ScheduleConsultation from "../ScheduleConsultation";
+import HeroSidebar from "../../components/HeroSidebar";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -37,11 +38,13 @@ const Blogs = () => {
         bread_text="Blogs"
         bread_link="blogs"
       />
+      {/* Hero Sidebar */}
+      <HeroSidebar />
       <Container>
-        <div className="grid grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
-          <div className="col-span-9">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
+          <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-[50px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">
               {blogs.length > 0 ? (
                 blogs
                   .slice(0, 6)
@@ -53,7 +56,7 @@ const Blogs = () => {
             {/* Blog Pagination */}
             <BlogsPagination />
           </div>
-          <div className="col-span-3">
+          <div className="col-span-1 lg:col-span-4 xl:col-span-3">
             <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
               <input
                 type="text"
