@@ -1,14 +1,16 @@
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 interface TAttorneyCard {
   name: string;
   title: string;
   image: string;
+  id: number;
 }
 
-const AttorneyCard = ({ name, title, image }: TAttorneyCard) => (
-  <div className="relative group">
+const AttorneyCard = ({ name, title, image, id }: TAttorneyCard) => (
+  <Link to={`/projects/${id}`} className="relative group">
     <div className="absolute hidden group-hover:block right-2 top-2 transition-opacity duration-300 ease-in-out">
       <div className="bg-secondary rounded-full md:w-8 size-6 p-[6px] md:p-0 md:h-8 flex items-center justify-center">
         <BsTwitterX />
@@ -31,7 +33,7 @@ const AttorneyCard = ({ name, title, image }: TAttorneyCard) => (
         </p>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default AttorneyCard;

@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "img": "../src/images/our-teams/attorney_one.png",
+      "name": "John Doe",
+      "designation": "Criminal Lawyer",
+      "overview": "With over 15 years of experience, John Doe is a skilled criminal defense attorney, known for his strategic approach and dedication to protecting clients' rights.",
+      "social_links": [
+        "https://twitter.com/johndoe",
+        "https://linkedin.com/in/johndoe",
+        "https://facebook.com/johndoe"
+      ]
+    },
+    "about": {
+      "desc_one": "John Doe is a seasoned Criminal Law Specialist with over 15 years of experience defending clients in high-stakes criminal cases.",
+      "desc_two": "His dedication to protecting clients' rights makes him a trusted advocate."
+    },
+    "practice_areas": [
+      "Criminal Defense",
+      "DUI Defense",
+      "Drug Crimes",
+      "Violent Crimes"
+    ],
+    "experience_and_achievements": [
+      "Successfully defended over 200 criminal cases",
+      "Recognized as “Top Criminal Defense Lawyer” by XYZ Legal Group",
+      "Won a landmark case in the state supreme court"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "university": "University of California, Berkeley",
+        "years": "2001-2005"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Harvard Law School",
+        "years": "2005-2008"
+      },
+      {
+        "degree": "Certificate in Criminal Law Studies",
+        "university": "Stanford Law School",
+        "years": "2009"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, National Association of Criminal Defense Lawyers (NACDL)",
+      "Member, American Bar Association (ABA)",
+      "Member, Criminal Justice Section, State Bar Association"
+    ],
+    "awards_and_honors": [
+      "Top 100 Criminal Defense Lawyers, The National Trial Lawyers, 2020",
+      "Best Criminal Defense Attorney, Legal Elite Awards, 2019"
+    ]
+  },
+  {
+    "id": 2,
+    "user": {
+      "img": "../src/images/our-teams/attorney_two.png",
+      "name": "Jane Smith",
+      "designation": "Family Law Attorney",
+      "overview": "Jane Smith specializes in family law and has over a decade of experience in handling divorce and custody cases.",
+      "social_links": [
+        "https://twitter.com/janesmith",
+        "https://linkedin.com/in/janesmith",
+        "https://facebook.com/janesmith"
+      ]
+    },
+    "about": {
+      "desc_one": "Jane Smith is committed to helping families navigate complex legal issues with empathy and professionalism.",
+      "desc_two": "Her extensive experience in family law has earned her a reputation as a compassionate advocate."
+    },
+    "practice_areas": [
+      "Divorce",
+      "Child Custody",
+      "Adoption",
+      "Family Mediation"
+    ],
+    "experience_and_achievements": [
+      "Successfully mediated over 100 family law cases",
+      "Recognized as a top family lawyer by Local Legal Magazine"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Sociology",
+        "university": "University of Michigan",
+        "years": "2000-2004"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "University of Chicago",
+        "years": "2004-2007"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Academy of Matrimonial Lawyers",
+      "Member, Family Law Section, ABA"
+    ],
+    "awards_and_honors": ["Best Family Lawyer, Local Legal Awards, 2021"]
+  },
+  {
+    "id": 3,
+    "user": {
+      "img": "../src/images/our-teams/attorney_three.png",
+      "name": "Robert Brown",
+      "designation": "Business Law Specialist",
+      "overview": "Robert Brown provides legal counsel to businesses on a range of corporate issues, including mergers and acquisitions.",
+      "social_links": [
+        "https://twitter.com/michaelbrown",
+        "https://linkedin.com/in/michaelbrown",
+        "https://facebook.com/michaelbrown"
+      ]
+    },
+    "about": {
+      "desc_one": "With over 12 years of experience, Robert Brown helps clients navigate complex corporate transactions.",
+      "desc_two": "His strategic advice has facilitated successful mergers and acquisitions for numerous clients."
+    },
+    "practice_areas": [
+      "Corporate Law",
+      "Mergers and Acquisitions",
+      "Contract Law"
+    ],
+    "experience_and_achievements": [
+      "Advised on over 50 successful mergers",
+      "Recognized as a leading corporate lawyer by Business Law Journal"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Business Administration",
+        "university": "University of Pennsylvania",
+        "years": "2001-2005"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Columbia Law School",
+        "years": "2005-2008"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Bar Association",
+      "Member, Corporate Law Section, ABA"
+    ],
+    "awards_and_honors": [
+      "Top Corporate Lawyer, National Business Awards, 2020"
+    ]
+  },
+  {
+    "id": 4,
+    "user": {
+      "img": "../src/images/our-teams/attorney_four.png",
+      "name": "Emily Johnson",
+      "designation": "Estate Planning Attorney",
+      "overview": "Emily Johnson specializes in intellectual property law, protecting the rights of creators and inventors.",
+      "social_links": [
+        "https://twitter.com/emilydavis",
+        "https://linkedin.com/in/emilydavis",
+        "https://facebook.com/emilydavis"
+      ]
+    },
+    "about": {
+      "desc_one": "Emily has a strong track record in protecting intellectual property rights and litigating disputes.",
+      "desc_two": "Her passion for innovation drives her commitment to clients."
+    },
+    "practice_areas": ["Patents", "Trademarks", "Copyrights"],
+    "experience_and_achievements": [
+      "Successfully registered over 300 trademarks",
+      "Won a high-profile patent infringement case"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in History",
+        "university": "Harvard University",
+        "years": "2002-2006"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Stanford Law School",
+        "years": "2006-2009"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, International Trademark Association",
+      "Member, American Intellectual Property Law Association"
+    ],
+    "awards_and_honors": ["IP Lawyer of the Year, National Law Journal, 2021"]
+  },
+  {
+    "id": 5,
+    "user": {
+      "img": "../src/images/our-teams/attorney_five.png",
+      "name": "Laura Green",
+      "designation": "Juvenile Defense Attorney",
+      "overview": "Laura Green has extensive experience in tax law and helps clients with tax planning and litigation.",
+      "social_links": [
+        "https://twitter.com/davidwilson",
+        "https://linkedin.com/in/davidwilson",
+        "https://facebook.com/davidwilson"
+      ]
+    },
+    "about": {
+      "desc_one": "David specializes in tax planning for individuals and businesses, ensuring compliance and minimizing liabilities.",
+      "desc_two": "He is known for his thorough understanding of complex tax codes."
+    },
+    "practice_areas": ["Tax Planning", "Tax Litigation", "Estate Planning"],
+    "experience_and_achievements": [
+      "Advised on tax strategies for Fortune 500 companies",
+      "Successfully represented clients in federal tax court"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Business Administration",
+        "university": "University of Texas",
+        "years": "2000-2004"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "New York University School of Law",
+        "years": "2004-2007"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Bar Association",
+      "Member, Tax Section, ABA"
+    ],
+    "awards_and_honors": ["Best Tax Lawyer, Legal Awards, 2020"]
+  },
+  {
+    "id": 6,
+    "user": {
+      "img": "../src/images/our-teams/attorney_six.png",
+      "name": "Christopher Lee",
+      "designation": "Business Law Attorney",
+      "overview": "Christopher Lee is dedicated to helping clients navigate the complexities of immigration law.",
+      "social_links": [
+        "https://twitter.com/sarahjohnson",
+        "https://linkedin.com/in/sarahjohnson",
+        "https://facebook.com/sarahjohnson"
+      ]
+    },
+    "about": {
+      "desc_one": "Sarah has successfully assisted numerous clients with visa applications and immigration petitions.",
+      "desc_two": "Her compassionate approach has earned her a loyal client base."
+    },
+    "practice_areas": [
+      "Visa Applications",
+      "Green Cards",
+      "Deportation Defense"
+    ],
+    "experience_and_achievements": [
+      "Successfully helped over 500 clients secure visas",
+      "Recognized as a leading immigration attorney by Immigration Today"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in International Relations",
+        "university": "Georgetown University",
+        "years": "2003-2007"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "George Washington University Law School",
+        "years": "2007-2010"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Immigration Lawyers Association",
+      "Member, National Immigration Project"
+    ],
+    "awards_and_honors": [
+      "Best Immigration Lawyer, Legal Excellence Awards, 2022"
+    ]
+  },
+  {
+    "id": 7,
+    "user": {
+      "img": "../src/images/our-teams/attorney_seven.png",
+      "name": "Samantha Harris",
+      "designation": "Employment Law Specialist",
+      "overview": "Samantha Harris fights for the rights of those injured due to the negligence of others.",
+      "social_links": [
+        "https://twitter.com/lisagreen",
+        "https://linkedin.com/in/lisagreen",
+        "https://facebook.com/lisagreen"
+      ]
+    },
+    "about": {
+      "desc_one": "Lisa has dedicated her career to helping injury victims seek justice and compensation.",
+      "desc_two": "Her tenacity and commitment to her clients set her apart."
+    },
+    "practice_areas": [
+      "Personal Injury",
+      "Medical Malpractice",
+      "Workers' Compensation"
+    ],
+    "experience_and_achievements": [
+      "Successfully recovered millions for her clients",
+      "Recognized as a top personal injury lawyer by Legal Experts"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Psychology",
+        "university": "University of California, Los Angeles",
+        "years": "2004-2008"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "University of Southern California",
+        "years": "2008-2011"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Association for Justice",
+      "Member, California Trial Lawyers Association"
+    ],
+    "awards_and_honors": [
+      "Top 100 Personal Injury Lawyers, National Trial Lawyers, 2021"
+    ]
+  },
+  {
+    "id": 8,
+    "user": {
+      "img": "../src/images/our-teams/attorney_eight.png",
+      "name": "James Clark",
+      "designation": "Medical Malpractice Attorney",
+      "overview": "James Clark specializes in real estate transactions and litigation.",
+      "social_links": [
+        "https://twitter.com/kevinwhite",
+        "https://linkedin.com/in/kevinwhite",
+        "https://facebook.com/kevinwhite"
+      ]
+    },
+    "about": {
+      "desc_one": "Kevin has extensive experience in handling complex real estate deals.",
+      "desc_two": "He is known for his attention to detail and commitment to client success."
+    },
+    "practice_areas": [
+      "Real Estate Transactions",
+      "Landlord-Tenant Law",
+      "Zoning Law"
+    ],
+    "experience_and_achievements": [
+      "Successfully closed over 300 real estate transactions",
+      "Recognized as a leading real estate lawyer by Local Real Estate Journal"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Business",
+        "university": "New York University",
+        "years": "2001-2005"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "University of California, Berkeley",
+        "years": "2005-2008"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Bar Association",
+      "Member, Real Estate Section, ABA"
+    ],
+    "awards_and_honors": ["Best Real Estate Lawyer, Real Estate Awards, 2020"]
+  },
+  {
+    "id": 9,
+    "user": {
+      "img": "../src/images/our-teams/attorney_nine.png",
+      "name": "Olivia Martinez",
+      "designation": "Estate Planning Attorney",
+      "overview": "Olivia Martinez is passionate about environmental law and advocates for sustainable practices.",
+      "social_links": [
+        "https://twitter.com/annalee",
+        "https://linkedin.com/in/annalee",
+        "https://facebook.com/annalee"
+      ]
+    },
+    "about": {
+      "desc_one": "Anna works tirelessly to protect the environment and promote sustainability.",
+      "desc_two": "Her advocacy has made a significant impact on environmental policies."
+    },
+    "practice_areas": [
+      "Environmental Law",
+      "Regulatory Compliance",
+      "Land Use"
+    ],
+    "experience_and_achievements": [
+      "Successfully advocated for several key environmental regulations",
+      "Recognized as an environmental leader by Eco-Friendly Journal"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Science in Environmental Science",
+        "university": "Duke University",
+        "years": "2000-2004"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Vanderbilt University Law School",
+        "years": "2004-2007"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, Environmental Law Institute",
+      "Member, American Bar Association"
+    ],
+    "awards_and_honors": [
+      "Environmental Lawyer of the Year, Green Awards, 2022"
+    ]
+  },
+  {
+    "id": 10,
+    "user": {
+      "img": "../src/images/our-teams/attorney_ten.png",
+      "name": "Daniel Thompson",
+      "designation": "Real Estate Law Attorney",
+      "overview": "Daniel Thompson specializes in bankruptcy law and helps clients navigate financial difficulties.",
+      "social_links": [
+        "https://twitter.com/chrismartin",
+        "https://linkedin.com/in/chrismartin",
+        "https://facebook.com/chrismartin"
+      ]
+    },
+    "about": {
+      "desc_one": "With years of experience, Chris helps clients file for bankruptcy and manage debt relief.",
+      "desc_two": "His strategic guidance has led to successful outcomes for many clients."
+    },
+    "practice_areas": [
+      "Chapter 7 Bankruptcy",
+      "Chapter 13 Bankruptcy",
+      "Debt Relief"
+    ],
+    "experience_and_achievements": [
+      "Successfully assisted over 200 clients in filing for bankruptcy",
+      "Recognized as a top bankruptcy lawyer by Financial Legal Review"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Finance",
+        "university": "University of Florida",
+        "years": "2002-2006"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Florida State University College of Law",
+        "years": "2006-2009"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, National Association of Consumer Bankruptcy Attorneys",
+      "Member, American Bankruptcy Institute"
+    ],
+    "awards_and_honors": ["Best Bankruptcy Lawyer, Consumer Law Awards, 2021"]
+  },
+  {
+    "id": 11,
+    "user": {
+      "img": "../src/images/our-teams/attorney_eleven.png",
+      "name": "Isabella Robinson",
+      "designation": "Immigration Law Specialist",
+      "overview": "Isabella Robinson is dedicated to protecting workers' rights and advocating for fair labor practices.",
+      "social_links": [
+        "https://twitter.com/patriciataylor",
+        "https://linkedin.com/in/patriciataylor",
+        "https://facebook.com/patriciataylor"
+      ]
+    },
+    "about": {
+      "desc_one": "With over 10 years of experience, Patricia has fought for workers in various industries.",
+      "desc_two": "Her commitment to labor rights has made her a respected figure in the field."
+    },
+    "practice_areas": [
+      "Labor Law",
+      "Employment Disputes",
+      "Workers' Compensation"
+    ],
+    "experience_and_achievements": [
+      "Successfully represented thousands of workers in disputes",
+      "Recognized as a leading labor lawyer by Labor Law Review"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Human Resources",
+        "university": "University of Washington",
+        "years": "2000-2004"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Seattle University School of Law",
+        "years": "2004-2007"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, National Employment Lawyers Association",
+      "Member, American Bar Association"
+    ],
+    "awards_and_honors": ["Top Labor Lawyer, National Labor Awards, 2022"]
+  },
+  {
+    "id": 12,
+    "user": {
+      "img": "../src/images/our-teams/attorney_twelve.png",
+      "name": "Matthew Wright",
+      "designation": "Criminal Defense Attorney",
+      "overview": "Matthew Wright specializes in insurance law and helps clients with claims and disputes.",
+      "social_links": [
+        "https://twitter.com/markwilson",
+        "https://linkedin.com/in/markwilson",
+        "https://facebook.com/markwilson"
+      ]
+    },
+    "about": {
+      "desc_one": "Mark has extensive experience in handling insurance claims and litigation.",
+      "desc_two": "His expertise ensures clients receive the compensation they deserve."
+    },
+    "practice_areas": [
+      "Insurance Claims",
+      "Insurance Litigation",
+      "Policy Disputes"
+    ],
+    "experience_and_achievements": [
+      "Successfully resolved thousands of insurance claims",
+      "Recognized as a top insurance lawyer by Legal Insight"
+    ],
+    "education_milestones": [
+      {
+        "degree": "Bachelor of Arts in Economics",
+        "university": "University of Illinois",
+        "years": "2001-2005"
+      },
+      {
+        "degree": "Juris Doctor",
+        "university": "Northwestern University Pritzker School of Law",
+        "years": "2005-2008"
+      }
+    ],
+    "professional_affiliations": [
+      "Member, American Bar Association",
+      "Member, National Association of Insurance Commissioners"
+    ],
+    "awards_and_honors": ["Best Insurance Lawyer, National Awards, 2021"]
+  }
+]

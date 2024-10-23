@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "img": "../src/images/blogs/blog_one.png",
+    "user": "../src/images/blogs/user_one.png",
+    "category": "Immigration Law",
+    "title": "Immigration Law: What You Need to Know",
+    "desc": "Key details for navigating the complex world of immigration law",
+    "user_name": "By Benjamin Cooper",
+    "date": "24 May, 2024"
+  },
+  {
+    "id": 2,
+    "img": "../src/images/blogs/blog_two.png",
+    "user": "../src/images/blogs/user_two.png",
+    "category": "Employment Law",
+    "title": "Understanding Employment Law Rights",
+    "desc": "Know your rights as an employee and how to navigate workplace disputes",
+    "user_name": "By Evelyn Carter",
+    "date": "22 May, 2024"
+  },
+  {
+    "id": 3,
+    "img": "../src/images/blogs/blog_three.png",
+    "user": "../src/images/blogs/user_three.png",
+    "category": "Real Estate Law",
+    "title": "Real Estate Law: Common Legal Challenges",
+    "desc": "Common legal issues in real estate transactions & how to avoid them",
+    "user_name": "By William Harrison",
+    "date": "02 May, 2024"
+  },
+  {
+    "id": 4,
+    "img": "../src/images/blogs/blog_four.png",
+    "user": "../src/images/blogs/user_four.png",
+    "category": "Criminal Law",
+    "title": "Understanding Your Legal Rights in Criminal Cases",
+    "desc": "Learn the essential steps to protect yourself when facing criminal charges",
+    "user_name": "By John Doe",
+    "date": "29 April, 2023"
+  },
+  {
+    "id": 5,
+    "img": "../src/images/blogs/blog_five.png",
+    "user": "../src/images/blogs/user_five.png",
+    "category": "Personal Injury",
+    "title": "How to Handle a Personal Injury Case",
+    "desc": "Steps to take after an injury to ensure you get the compensation you deserve",
+  "user_name": "By Olivia",
+    "date": "16 April, 2024"
+  },
+  {
+    "id": 6,
+    "img": "../src/images/blogs/blog_six.png",
+    "user": "../src/images/blogs/user_six.png",
+    "category": "Estate Planning",
+    "title": "The Importance of Estate Planning for Families",
+    "desc": "Estate planning is crucial for protecting your family’s future",
+    "user_name": "By Sophia Martinez",
+    "date": "11 April, 2023"
+  },
+  {
+    "id": 7,
+    "img": "../src/images/blogs/blog_three.png",
+    "user": "../src/images/blogs/user_three.png",
+    "category": "Family Law",
+    "title": "Real Estate Law: Common Legal Challenges",
+    "desc": "Common legal issues in real estate transactions & how to avoid them",
+    "user_name": "By William Harrison",
+    "date": "02 May, 2024"
+  },
+  {
+    "id": 8,
+    "img": "../src/images/blogs/blog_four.png",
+    "user": "../src/images/blogs/user_four.png",
+    "category": "Business Law",
+    "title": "Understanding Your Legal Rights in Criminal Cases",
+    "desc": "Learn the essential steps to protect yourself when facing criminal charges",
+    "user_name": "By John Doe",
+    "date": "29 April, 2023"
+  }
+]

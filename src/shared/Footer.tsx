@@ -4,6 +4,7 @@ import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import FooterContent from "../components/FooterContent";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="col-span-1 md:col-span-3">
-              <img src={logo} alt="Logo" className="-mt-3" />
+              <Link to="/">
+                <img src={logo} alt="Logo" className="-mt-3" />
+              </Link>
               <div>
                 <h4 className="text-white mt-10 text-sm font-opensans">
                   123 Legal St, Suite 400 New York, NY 10001
