@@ -3,6 +3,7 @@ import banner from "../../images/attorneys/attorneys_banner.png";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AttorneysProfileCard from "../../components/AttorneysProfileCard";
+import ScheduleConsultation from "../ScheduleConsultation";
 
 interface User {
   id: number;
@@ -109,6 +110,7 @@ const AttorneysProfile = () => {
       {users.length === 0 && (
         <p className="text-center py-10 font-opensans">User not found</p>
       )}
+      <ScheduleConsultation />
     </>
   );
 };

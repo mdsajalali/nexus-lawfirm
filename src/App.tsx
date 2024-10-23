@@ -9,6 +9,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import CriminalLaw from "./pages/CriminalLaw/CriminalLaw";
 import Contact from "./pages/Contact/Contact";
 import AttorneysProfile from "./pages/Attorneys/AttorneysProfile";
+import Blogs from "./pages/Blogs/Blogs";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/skills" element={<PracticeAreas />} />
         <Route path="/projects" element={<Attorneys />} />
         <Route path="/projects/:id" element={<AttorneysProfile />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<TermsService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
