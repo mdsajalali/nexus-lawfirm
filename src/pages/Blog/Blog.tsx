@@ -1,7 +1,6 @@
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/blog/blog_banner.png";
 import ScheduleConsultation from "../ScheduleConsultation";
-import BlogCategories from "../../components/BlogCategories";
 import RecentBlogs from "../../components/RecentBlogs";
 import { CiSearch } from "react-icons/ci";
 import Container from "../../shared/Container";
@@ -52,7 +51,9 @@ const Blog = () => {
   }
 
   if (!blog) {
-    return <div className="font-opensans text-center py-5">Blog not found.</div>;
+    return (
+      <div className="font-opensans text-center py-5">Blog not found.</div>
+    );
   }
 
   return (
@@ -83,8 +84,8 @@ const Blog = () => {
             </div>
             {/* Recent Blogs */}
             <RecentBlogs />
-            {/* Blog Categories */}
-            <BlogCategories />
+            {/* TODO: Blog Categories */}
+            {/* <BlogCategories /> */}
           </div>
         </div>
       </Container>
