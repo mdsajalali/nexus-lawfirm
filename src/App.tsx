@@ -10,6 +10,7 @@ import CriminalLaw from "./pages/CriminalLaw/CriminalLaw";
 import Contact from "./pages/Contact/Contact";
 import AttorneysProfile from "./pages/Attorneys/AttorneysProfile";
 import Blogs from "./pages/Blogs/Blogs";
+import Blog from "./pages/Blog/Blog";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/projects" element={<Attorneys />} />
         <Route path="/projects/:id" element={<AttorneysProfile />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<TermsService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
