@@ -16,7 +16,9 @@
       }
     ],
     "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "discrimination_protection": "Discrimination in the workplace based on race, gender, religion, age, disability, or national origin is prohibited under several federal laws, including Title VII of the Civil Rights Act. If you believe you’ve been discriminated against, it’s essential to document the instances and report them to the appropriate authorities.",
     "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+
     "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
     "violated": [
       {
