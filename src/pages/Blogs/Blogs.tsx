@@ -6,6 +6,8 @@ import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
 import RecentBlogs from "../../components/RecentBlogs";
 import { CiSearch } from "react-icons/ci";
+import BlogCategories from "../../components/BlogCategories";
+import ScheduleConsultation from "../ScheduleConsultation";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -37,7 +39,7 @@ const Blogs = () => {
       />
       <Container>
         <div className="grid grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
-          <div className="col-span-8">
+          <div className="col-span-9">
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-[50px]">
               {blogs.length > 0 ? (
@@ -51,7 +53,7 @@ const Blogs = () => {
             {/* Blog Pagination */}
             <BlogsPagination />
           </div>
-          <div className="col-span-4">
+          <div className="col-span-3">
             <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
               <input
                 type="text"
@@ -62,9 +64,13 @@ const Blogs = () => {
             </div>
             {/* Recent Blogs */}
             <RecentBlogs />
+            {/* Blog Categories */}
+            <BlogCategories />
           </div>
         </div>
       </Container>
+      {/* Schedule Consultation */}
+      <ScheduleConsultation />
     </>
   );
 };
