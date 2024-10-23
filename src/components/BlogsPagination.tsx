@@ -1,16 +1,16 @@
-import { useState } from "react";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 
-const BlogsPagination = () => {
-  const totalPages = 5;
-  const [activePage, setActivePage] = useState(1);
+interface BlogsPaginationProps {
+  totalPages: number;
+  activePage: number;
+  onPageChange: (page: number) => void;
+}
 
-  const handlePageChange = (page: number) => {
-    if (page >= 1 && page <= totalPages) {
-      setActivePage(page);
-    }
-  };
-
+const BlogsPagination = ({
+  totalPages,
+  activePage,
+  onPageChange,
+}: BlogsPaginationProps) => {
   const isBackDisabled = activePage === 1;
   const isNextDisabled = activePage === totalPages;
 
@@ -22,7 +22,7 @@ const BlogsPagination = () => {
             ? "opacity-50 cursor-not-allowed"
             : "hover:bg-primary hover:text-white"
         }`}
-        onClick={() => handlePageChange(activePage - 1)}
+        onClick={() => onPageChange(activePage - 1)}
         disabled={isBackDisabled}
       >
         <MdOutlineNavigateBefore /> Back
@@ -36,7 +36,7 @@ const BlogsPagination = () => {
               ? "bg-primary text-white"
               : "hover:bg-primary hover:text-white"
           }`}
-          onClick={() => handlePageChange(index + 1)}
+          onClick={() => onPageChange(index + 1)}
         >
           {index + 1}
         </button>
@@ -48,7 +48,7 @@ const BlogsPagination = () => {
             ? "opacity-50 cursor-not-allowed"
             : "hover:bg-primary hover:text-white"
         }`}
-        onClick={() => handlePageChange(activePage + 1)}
+        onClick={() => onPageChange(activePage + 1)}
         disabled={isNextDisabled}
       >
         Next <MdOutlineNavigateNext />

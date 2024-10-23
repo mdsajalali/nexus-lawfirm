@@ -10,13 +10,22 @@ import ScheduleConsultation from "../ScheduleConsultation";
 import HeroSidebar from "../../components/HeroSidebar";
 import BlogsSearch from "../../components/BlogsSearch";
 
-interface Blog {
+interface BlogProps {
+  img: string;
+  category: string;
   title: string;
+  desc: string;
+  user: string;
+  user_name: string;
+  date: string;
+  id: string;
 }
 
 const Blogs = () => {
-  const [blogs, setBlogs] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [blogs, setBlogs] = useState<BlogProps[]>([]);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [activePage, setActivePage] = useState<number>(1);
+  const blogsPerPage = 6;
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -35,9 +44,15 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
-  const filteredBlogs = blogs.filter((blog: Blog) =>
+  const filteredBlogs = blogs.filter((blog) =>
     blog.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const indexOfLastBlog = activePage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
 
   return (
     <>
@@ -53,28 +68,28 @@ const Blogs = () => {
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">
-              {filteredBlogs.length > 0 ? (
-                filteredBlogs
-                  .slice(0, 6)
-                  .map((blog, idx) => <BlogsCard key={idx} blog={blog} />)
+              {currentBlogs.length > 0 ? (
+                currentBlogs.map((blog, idx) => (
+                  <BlogsCard key={idx} blog={blog} />
+                ))
               ) : (
                 <p className="col-span-full text-center">
                   No blogs found matching your search.
                 </p>
               )}
             </div>
-            {/* Blog Pagination */}
-            <BlogsPagination />
+            <BlogsPagination
+              totalPages={totalPages}
+              activePage={activePage}
+              onPageChange={setActivePage}
+            />
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
-            {/* Blogs Search */}
             <BlogsSearch
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
             />
-            {/* Recent Blogs */}
             <RecentBlogs />
-            {/* Blog Categories */}
             <BlogCategories />
           </div>
         </div>
