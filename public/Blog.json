@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  },
+  {
+    "id": 2,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  },
+  {
+    "id": 3,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  },
+  {
+    "id": 4,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  },
+  {
+    "id": 5,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  },
+  {
+    "id": 6,
+    "img": "../src/images/blog/blog.png",
+    "name": "By Benjamin Cooper",
+    "date": "24 May, 2024",
+    "category": "Immigration law",
+    "intro": "Employment law governs the relationship between employers and employees, ensuring that both parties are treated fairly and respectfully. Understanding your rights as an employee is crucial to safeguarding your career and navigating any issues that may arise in the workplace.",
+    "wage_rights": [
+      {
+        "desc": "One of the most common concerns employees face involves wages and hours worked. Under the Fair Labor Standards Act (FLSA), you are entitled to:",
+        "rights": [
+          "A minimum wage.",
+          "Overtime pay for working more than 40 hours a week (for non-exempt employees). If your employer denies you proper compensation, it may be a violation of your rights."
+        ]
+      }
+    ],
+    "harassment_prevention": "Workplace harassment, especially sexual harassment, is a serious violation of employee rights. Employers must provide a safe and respectful working environment. If you're subjected to harassment, your employer has a legal obligation to address the situation and take appropriate action.",
+    "workplace_safety": "The Occupational Safety and Health Administration (OSHA) sets regulations for workplace safety, ensuring that employees are not exposed to hazardous conditions. You have the right to a safe working environment, and if safety protocols are not followed, you can report violations without fear of retaliation.",
+    "family_medical_leave": "Under the Family and Medical Leave Act (FMLA), employees are entitled to take unpaid leave for family or medical reasons. This includes leave for the birth or adoption of a child, personal or family illness, or caring for an injured family member. Your job should be protected during this period, ensuring you can return to your position afterward.",
+    "violated": [
+      {
+        "desc": "If you feel that your employment rights have been violated, here are some steps you can take:",
+        "rights": [
+          "Document everything: Keep a detailed record of all incidents, including dates, times, and any correspondence.",
+          "Report the issue: Notify your employer or HR department about the violation.",
+          "Seek legal counsel: Consult with an employment lawyer to explore your options and, if necessary, file a formal complaint or lawsuit."
+        ]
+      }
+    ],
+    "conclusion": "Understanding your employment rights is key to ensuring fair treatment in the workplace. If you believe your rights have been violated, don’t hesitate to take action. Employment laws exist to protect you and ensure that your work environment is just, safe, and respectful."
+  }
+]
