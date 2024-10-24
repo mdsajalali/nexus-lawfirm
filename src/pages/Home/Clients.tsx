@@ -1,9 +1,9 @@
-import client_banner from "../images/clients/client_bg.png";
-import client_one from "../images/clients/client_one.png";
-import client_two from "../images/clients/client_two.png";
-import client_three from "../images/clients/client_three.png";
-import quote_icon from "../images/clients/quote_icon.svg";
-import { Navigation, Autoplay } from "swiper/modules";
+import client_banner from "../../images/clients/client_bg.png";
+import client_one from "../../images/clients/client_one.png";
+import client_two from "../../images/clients/client_two.png";
+import client_three from "../../images/clients/client_three.png";
+import quote_icon from "../../images/clients/quote_icon.svg";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { IoStar } from "react-icons/io5";
@@ -23,13 +23,12 @@ const Clients = () => {
         <section className="md:py-[60px] py-10 xl:px-0   px-4">
           <div>
             <Swiper
-              modules={[Navigation, Autoplay]}
+              modules={[Navigation, Autoplay, Pagination]}
               spaceBetween={24}
               slidesPerView={1}
-              autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-              }}
+              loop={true}
+              speed={400}
+              autoplay={{ delay: 1500 }}
               breakpoints={{
                 375: {
                   slidesPerView: 1,

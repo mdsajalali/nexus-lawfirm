@@ -3,7 +3,7 @@ import banner from "../../images/blogs/blogs_banner.png";
 import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 import HeroSidebar from "../../components/HeroSidebar";
 import useBlogs from "../../hooks/useBlogs";
 import useBlogStore from "../../store/BlogsStore";

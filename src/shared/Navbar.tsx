@@ -7,7 +7,7 @@ import Container from "./Container";
 import hero_banner from "../images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";
-import Hero from "../pages/Hero";
+import Hero from "../pages/Home/Hero";
 import navLinks from "../components/navItems";
 import HeroSidebar from "../components/HeroSidebar";
 import ScheduleConsultationModal from "../components/ScheduleConsultationModal";

@@ -1,5 +1,5 @@
-import Container from "../shared/Container";
-import about_us from "../images/about_us.png";
+import Container from "../../shared/Container";
+import about_us from "../../images/about_us.png";
 import { IoMdCheckboxOutline } from "react-icons/io";
 
 const AboutUs = () => {

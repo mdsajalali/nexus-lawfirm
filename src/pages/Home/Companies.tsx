@@ -1,12 +1,12 @@
-import company_one from "../images/companies/company_one.png";
-import company_two from "../images/companies/company_two.png";
-import company_three from "../images/companies/company_three.png";
-import company_four from "../images/companies/company_four.png";
+import company_one from "../../images/companies/company_one.png";
+import company_two from "../../images/companies/company_two.png";
+import company_three from "../../images/companies/company_three.png";
+import company_four from "../../images/companies/company_four.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
-import Container from "../shared/Container";
+import Container from "../../shared/Container";
 
 const companies = [
   { src: company_one, alt: "Company One" },
@@ -26,7 +26,7 @@ const Companies = () => {
           spaceBetween={20}
           loop={true}
           speed={400}
-          autoplay={{ delay: 2000 }}
+          autoplay={{ delay: 1500 }}
           slidesPerView="auto"
           breakpoints={{
             320: {

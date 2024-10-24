@@ -1,6 +1,6 @@
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/blog/blog_banner.png";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 import Container from "../../shared/Container";
 import HeroSidebar from "../../components/HeroSidebar";
 import BlogCard from "../../components/BlogCard";

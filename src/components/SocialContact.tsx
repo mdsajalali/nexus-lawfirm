@@ -33,7 +33,7 @@ const SocialContact = () => {
           style={{ border: 0 }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-lg shadow-lg w-full h-[250px] md:h-[720px]"
+          className="rounded-lg shadow-lg w-full h-[250px] md:h-[600px]"
         ></iframe>
       </div>
     </div>

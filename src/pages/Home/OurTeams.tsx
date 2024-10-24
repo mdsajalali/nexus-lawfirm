@@ -1,10 +1,10 @@
-import Container from "../shared/Container";
-import attorney_one from "../images/our-teams/attorney_one.png";
-import attorney_two from "../images/our-teams/attorney_two.png";
-import attorney_three from "../images/our-teams/attorney_three.png";
-import attorney_four from "../images/our-teams/attorney_four.png";
-import AttorneyCard from "../components/AttorneyCard";
+import attorney_one from "../../images/our-teams/attorney_one.png";
+import attorney_two from "../../images/our-teams/attorney_two.png";
+import attorney_three from "../../images/our-teams/attorney_three.png";
+import attorney_four from "../../images/our-teams/attorney_four.png";
 import { Link } from "react-router-dom";
+import Container from "../../shared/Container";
+import AttorneyCard from "../../components/AttorneyCard";
 
 const OurTeams = () => {
   return (

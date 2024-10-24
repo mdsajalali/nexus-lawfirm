@@ -3,7 +3,7 @@ import banner from "../../images/attorneys/attorneys_banner.png";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AttorneysProfileCard from "../../components/AttorneysProfileCard";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 
 interface User {
   id: number;
