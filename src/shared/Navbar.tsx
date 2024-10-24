@@ -26,7 +26,7 @@ const Navbar = () => {
       <img
         src={hero_banner}
         alt="Hero Banner"
-        className="w-full h-[70vh] md:h-[100vh]  object-cover"
+        className="w-full h-[75vh]  lg:h-[100vh]  object-cover"
       />
       <main className="absolute right-0 top-0 z-[9999] w-full   text-white">
         <TopNav />

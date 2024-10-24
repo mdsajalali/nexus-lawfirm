@@ -15,7 +15,7 @@ const Legal_Expertise = () => {
       <div className="xl:block hidden">
         <HeroSidebar />
       </div>
-      <div className="py-20 md:py-[100px]">
+      <div className="py-10 md:py-[100px]">
         <div className="text-center max-w-[804px] mx-auto">
           <h1 className="text-2xl md:text-[40px] font-semibold">
             Our Legal Expertise

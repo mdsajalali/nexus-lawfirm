@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 const useBlogs = () => {
-  const { data, isLoading } = useQuery({
+  const { data } = useQuery({
     queryKey: ["blogs"],
     queryFn: async () => {
       const res = await fetch("/blogs.json");
@@ -15,7 +15,7 @@ const useBlogs = () => {
   const blogs = data?.blogs || [];
   const recentBlogs = data?.recent_blogs || [];
 
-  return { blogs, recentBlogs, isLoading };
+  return { blogs, recentBlogs };
 };
 
 export default useBlogs;

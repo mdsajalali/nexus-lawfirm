@@ -9,7 +9,7 @@ const ContactInfo = () => {
     <Container>
       {/* Sidebar icon */}
       <HeroSidebar />
-      <div className="grid grid-cols-1 lg:grid-cols-2  place-items-center gap-5 py-20 md:py-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2  place-items-center gap-5 py-10 md:py-[100px]">
         <div className="max-w-[500px]">
           <h1 className="text-2xl font-semibold lead5] md:leading-[60px] md:text-[40px]">
             Do you need help? <br /> Contact with us now!

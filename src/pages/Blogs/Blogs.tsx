@@ -21,7 +21,7 @@ interface BlogProps {
 }
 
 const Blogs = () => {
-  const { blogs, isLoading } = useBlogs();
+  const { blogs } = useBlogs();
   const {
     searchQuery,
     selectedCategory,
@@ -29,9 +29,6 @@ const Blogs = () => {
     setActivePage,
     blogsPerPage,
   } = useBlogStore();
-
-  if (isLoading)
-    return <div className="text-center my-5 font-opensans">Loading...</div>;
 
   const filteredBlogs = blogs.filter((blog: BlogProps) => {
     const matchesSearch = blog.title
@@ -57,7 +54,7 @@ const Blogs = () => {
       />
       <HeroSidebar />
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-10 font-opensans lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">

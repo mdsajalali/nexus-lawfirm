@@ -11,8 +11,8 @@ const Footer = () => {
     <>
       <div className="bg-primary pt-10 pb-8">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="col-span-1 md:col-span-3">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="col-span-1 lg:col-span-3">
               <Link to="/">
                 <img src={logo} alt="Logo" className="-mt-3" />
               </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 lg:col-span-2">
               <h1 className="text-lg font-semibold text-white font-opensans">
                 Quick Links
               </h1>
@@ -61,7 +61,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 lg:col-span-2">
               <h1 className="text-lg font-semibold text-white font-opensans">
                 Practice Areas
               </h1>
@@ -85,7 +85,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 lg:col-span-2">
               <h1 className="text-lg font-semibold text-white font-opensans">
                 Office Hours
               </h1>
@@ -109,7 +109,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-1 md:col-span-3">
+            <div className="col-span-1 lg:col-span-3">
               <h1 className="text-lg font-semibold text-white font-opensans">
                 Subscribe to Our Newsletter
               </h1>
