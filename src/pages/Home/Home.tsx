@@ -12,9 +12,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-10">
-        <Companies />
-      </div>
+      <Companies />
       <AboutUs />
       <ClientSatisfactionRate />
       <PracticeAreas />

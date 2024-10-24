@@ -56,11 +56,9 @@ interface attorneyProps {
 const AttorneysProfile = () => {
   const { id } = useParams<{ id: string }>();
   const [users, setUsers] = useState<User[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchUsers = async () => {
-      setLoading(true);
       try {
         const response = await fetch("/attorneys.json");
         const data: attorneyProps[] = await response.json();
@@ -86,17 +84,11 @@ const AttorneysProfile = () => {
         }
       } catch (error) {
         console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchUsers();
   }, [id]);
-
-  if (loading) {
-    return <p className="text-center py-10 font-opensans">Loading...</p>;
-  }
 
   return (
     <>

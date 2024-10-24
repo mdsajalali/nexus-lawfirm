@@ -16,11 +16,9 @@ interface BlogItem {
 const Blog = () => {
   const { id } = useParams<{ id: string }>();
   const [blog, setBlog] = useState(null);
-  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchBlog = async () => {
-      setLoading(true);
       try {
         const response = await fetch("/blog.json");
         if (!response.ok) {
@@ -39,23 +37,11 @@ const Blog = () => {
         }
       } catch (error) {
         console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchBlog();
   }, [id]);
-
-  if (loading) {
-    return <div className="font-opensans text-center py-5">Loading...</div>;
-  }
-
-  if (!blog) {
-    return (
-      <div className="font-opensans text-center py-5">Blog not found.</div>
-    );
-  }
 
   return (
     <>
@@ -72,7 +58,13 @@ const Blog = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             {/* Single Blog Show Here */}
-            <BlogCard blog={blog} />
+            {blog ? (
+              <BlogCard blog={blog} />
+            ) : (
+              <div className="font-opensans text-center py-5">
+                Blog not found.
+              </div>
+            )}
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
             <BlogsSidebar />

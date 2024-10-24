@@ -7,12 +7,12 @@ import Container from "../../shared/Container";
 const ClientSatisfactionRate = () => {
   return (
     <div
-      className="relative w-full h-[307px] md:h-[432px] bg-cover bg-center bg-fixed"
+      className="relative w-full h-[307px]  md:h-[432px] bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${client_banner})` }}
     >
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full   text-white">
         <Container>
-          <div className="grid gap-7 md:gap-[137px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
+          <div className="grid gap-7 lg:gap-[137px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
             <div>
               <img
                 className="md:w-[41px] w-[30px] h-[31px] md:h-[42px] mx-auto"
