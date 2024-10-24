@@ -1,12 +1,13 @@
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/blog/blog_banner.png";
 import ScheduleConsultation from "../ScheduleConsultation";
-import { CiSearch } from "react-icons/ci";
 import Container from "../../shared/Container";
 import HeroSidebar from "../../components/HeroSidebar";
 import BlogCard from "../../components/BlogCard";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+import BlogsSidebar from "../../shared/BlogsSidebar";
 
 interface BlogItem {
   id: number;
@@ -16,6 +17,7 @@ const Blog = () => {
   const { id } = useParams<{ id: string }>();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState<boolean>(true);
+
   useEffect(() => {
     const fetchBlog = async () => {
       setLoading(true);
@@ -73,18 +75,7 @@ const Blog = () => {
             <BlogCard blog={blog} />
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
-            <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
-              <input
-                type="text"
-                placeholder="Search"
-                className="text-[#D0D4D6] text-[14px] outline-none w-full"
-              />
-              <CiSearch size={20} className="text-[#3D4C56] cursor-pointer" />
-            </div>
-            {/* Recent Blogs */}
-            {/* <RecentBlogs /> */}
-            {/* TODO: Blog Categories */}
-            {/* <BlogCategories /> */}
+            <BlogsSidebar />
           </div>
         </div>
       </Container>

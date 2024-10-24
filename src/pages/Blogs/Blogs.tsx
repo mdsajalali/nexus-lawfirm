@@ -1,15 +1,13 @@
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/blogs/blogs_banner.png";
-import { useState } from "react";
 import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
-import RecentBlogs from "../../components/RecentBlogs";
-import BlogCategories from "../../components/BlogCategories";
 import ScheduleConsultation from "../ScheduleConsultation";
 import HeroSidebar from "../../components/HeroSidebar";
-import BlogsSearch from "../../components/BlogsSearch";
 import useBlogs from "../../hooks/useBlogs";
+import useBlogStore from "../../store/BlogsStore";
+import BlogsSidebar from "../../shared/BlogsSidebar";
 
 interface BlogProps {
   img: string;
@@ -23,11 +21,14 @@ interface BlogProps {
 }
 
 const Blogs = () => {
-  const { blogs, recentBlogs, isLoading } = useBlogs();
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [activePage, setActivePage] = useState<number>(1);
-  const blogsPerPage = 6;
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const { blogs, isLoading } = useBlogs();
+  const {
+    searchQuery,
+    selectedCategory,
+    activePage,
+    setActivePage,
+    blogsPerPage,
+  } = useBlogStore();
 
   if (isLoading)
     return <div className="text-center my-5 font-opensans">Loading...</div>;
@@ -75,22 +76,7 @@ const Blogs = () => {
             />
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
-            <BlogsSearch
-              searchQuery={searchQuery}
-              setSearchQuery={setSearchQuery}
-            />
-            {/* Recent Blogs */}
-            <div className="pt-10 pb-[100px]">
-              <h1 className="text-2xl font-semibold">Recent Blogs</h1>
-              {recentBlogs.map((blog: BlogProps) => (
-                <RecentBlogs key={blog.id} blog={blog} />
-              ))}
-            </div>
-
-            <BlogCategories
-              selectedCategory={selectedCategory}
-              setSelectedCategory={setSelectedCategory}
-            />
+            <BlogsSidebar />
           </div>
         </div>
       </Container>
