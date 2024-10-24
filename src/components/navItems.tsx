@@ -14,14 +14,15 @@ const navLinks: NavLinkProps[] = [
   },
   {
     label: "Practice Areas",
-    link: "/skills",
+    link: "/practice-areas",
   },
   {
     label: "Attorneys",
-    link: "/projects",
+    link: "/attorneys",
   },
+
   {
-    label: "Blog",
+    label: "Blogs",
     link: "/blogs",
   },
   {

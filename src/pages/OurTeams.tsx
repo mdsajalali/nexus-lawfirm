@@ -4,6 +4,7 @@ import attorney_two from "../images/our-teams/attorney_two.png";
 import attorney_three from "../images/our-teams/attorney_three.png";
 import attorney_four from "../images/our-teams/attorney_four.png";
 import AttorneyCard from "../components/AttorneyCard";
+import { Link } from "react-router-dom";
 
 const OurTeams = () => {
   return (
@@ -17,11 +18,11 @@ const OurTeams = () => {
             <AttorneyCard key={attorney.id} {...attorney} />
           ))}
         </div>
-        <div className="flex items-center justify-center">
+        <Link to="/attorneys" className="flex items-center justify-center">
           <button className="bg-transparent rounded border mt-5 md:mt-10 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
             Meet our attorneys
           </button>
-        </div>
+        </Link>
       </div>
     </Container>
   );

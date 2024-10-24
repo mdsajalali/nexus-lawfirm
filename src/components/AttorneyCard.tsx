@@ -10,7 +10,7 @@ interface TAttorneyCard {
 }
 
 const AttorneyCard = ({ name, title, image, id }: TAttorneyCard) => (
-  <Link to={`/projects/${id}`} className="relative group">
+  <Link to={`/attorneys/${id}`} className="relative group">
     <div className="absolute hidden group-hover:block right-2 top-2 transition-opacity duration-300 ease-in-out">
       <div className="bg-secondary rounded-full md:w-8 size-6 p-[6px] md:p-0 md:h-8 flex items-center justify-center">
         <BsTwitterX />
