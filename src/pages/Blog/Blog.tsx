@@ -40,12 +40,12 @@ const BlogComponent = () => {
 
   console.log("fetched blog", blog);
 
-  console.log("id", id)
+  console.log("id", id);
 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch("/blog.json");
+        const response = await fetch("/single-blog.json");
         console.log("Hello");
         if (!response.ok) {
           throw new Error("Network response was not ok");
