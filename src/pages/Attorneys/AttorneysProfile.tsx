@@ -29,7 +29,7 @@ interface User {
   awards_and_honors: string[];
 }
 
-interface attorneyProps {
+interface AttorneyProps {
   id: number;
   user: {
     img: string;
@@ -55,32 +55,22 @@ interface attorneyProps {
 
 const AttorneysProfile = () => {
   const { id } = useParams<{ id: string }>();
-  const [users, setUsers] = useState<User[]>([]);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const response = await fetch("/attorneys.json");
-        const data: attorneyProps[] = await response.json();
-        const filteredUser = data.find(
-          (item) => item.id === parseInt(id || "")
-        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data: AttorneyProps[] = await response.json();
 
+        const filteredUser = data.find((item) => item.id === Number(id));
         if (filteredUser) {
-          const user: User = {
-            id: filteredUser.id,
-            user: filteredUser.user,
-            about: filteredUser.about,
-            practice_areas: filteredUser.practice_areas,
-            experience_and_achievements:
-              filteredUser.experience_and_achievements,
-            education_milestones: filteredUser.education_milestones,
-            professional_affiliations: filteredUser.professional_affiliations,
-            awards_and_honors: filteredUser.awards_and_honors,
-          };
-          setUsers([user]);
+          setUser(filteredUser);
         } else {
-          setUsers([]);
+          setUser(null);
         }
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -98,8 +88,9 @@ const AttorneysProfile = () => {
         bread_text="Attorneys"
         bread_link="attorneys"
       />
-      <AttorneysProfileCard users={users} />
-      {users.length === 0 && (
+      {user ? (
+        <AttorneysProfileCard users={[user]} />
+      ) : (
         <p className="text-center py-10 font-opensans">User not found</p>
       )}
       <ScheduleConsultation />
