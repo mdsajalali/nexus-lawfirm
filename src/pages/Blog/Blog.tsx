@@ -1,21 +1,42 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "/images/blog/blog_banner.png";
 import ScheduleConsultation from "../../shared/ScheduleConsultation";
 import Container from "../../shared/Container";
 import HeroSidebar from "../../components/HeroSidebar";
 import BlogCard from "../../components/BlogCard";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-
 import BlogsSidebar from "../../shared/BlogsSidebar";
 
-interface BlogItem {
-  id: number;
+interface WageRights {
+  desc: string;
+  rights: string[];
 }
 
-const Blog = () => {
+interface Violated {
+  desc: string;
+  rights: string[];
+}
+
+interface Blog {
+  id: number;
+  img: string;
+  name: string;
+  date: string;
+  category: string;
+  intro: string;
+  wage_rights: WageRights[];
+  harassment_prevention: string;
+  discrimination_protection: string;
+  workplace_safety: string;
+  family_medical_leave: string;
+  violated: Violated[];
+  conclusion: string;
+}
+
+const BlogComponent = () => {
   const { id } = useParams<{ id: string }>();
-  const [blog, setBlog] = useState(null);
+  const [blog, setBlog] = useState<Blog | null>(null);
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -24,16 +45,14 @@ const Blog = () => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        const data = await response.json();
+        const data: Blog[] = await response.json();
 
-        const filteredBlog = id
-          ? data.find((item: BlogItem) => item.id === parseInt(id))
-          : undefined;
+        const filteredBlog = data.find((item) => item.id === parseInt(id!));
 
         if (filteredBlog) {
           setBlog(filteredBlog);
         } else {
-          console.error("Blog not found");
+          setBlog(null);
         }
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -52,12 +71,10 @@ const Blog = () => {
         bread_link="blogs"
       />
 
-      {/* Hero Sidebar */}
       <HeroSidebar />
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
-            {/* Single Blog Show Here */}
             {blog ? (
               <BlogCard blog={blog} />
             ) : (
@@ -71,10 +88,9 @@ const Blog = () => {
           </div>
         </div>
       </Container>
-      {/* Schedule Consultation */}
       <ScheduleConsultation />
     </>
   );
 };
 
-export default Blog;
+export default BlogComponent;
