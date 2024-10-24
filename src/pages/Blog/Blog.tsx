@@ -38,16 +38,21 @@ const BlogComponent = () => {
   const { id } = useParams<{ id: string }>();
   const [blog, setBlog] = useState<Blog | null>(null);
 
+  console.log("id", blog);
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await fetch("/blog.json");
+        console.log("Hello");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const data: Blog[] = await response.json();
 
-        const filteredBlog = data.find((item) => item.id === Number(id));
+        // const filteredBlog = data.find((item) => item.id === Number(id));
+        const filteredBlog = data.find((item) => item.id.toString() === id);
+
 
         if (filteredBlog) {
           setBlog(filteredBlog);
