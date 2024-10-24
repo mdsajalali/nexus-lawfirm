@@ -6,10 +6,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 
 const PracticeAreasCard = () => {
   return (
-    <div className="pt-10 md:pt-20 xl:px-0   px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div className="pt-10 md:pt-20 xl:px-0  px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="max-w-[519px] mx-auto">
         <h1 className="text-2xl md:text-[40px] text-center md:text-start font-semibold font-opensans">
           Practice Areas
@@ -23,6 +24,7 @@ const PracticeAreasCard = () => {
       <div>
         <Swiper
           modules={[Navigation, Autoplay, Pagination]}
+          pagination={true}
           spaceBetween={24}
           loop={true}
           speed={400}
@@ -54,7 +56,7 @@ const PracticeAreasCard = () => {
                 className="w-[56px] h-[56px] object-cover mx-auto"
               />
               <h1 className="pt-3 text-2xl font-semibold">{data?.title}</h1>
-              <p className="py-7 font-[16px] leading-[24px]">{data?.desc}</p>
+              <p className="py-7 font-[16px] h-40 md:h-auto leading-[24px]">{data?.desc}</p>
               <div className="flex items-center justify-center">
                 <button className="flex text-[18px] hover:text-secondary transition-all items-center gap-2">
                   Read more <FaArrowRightLong size={15} />

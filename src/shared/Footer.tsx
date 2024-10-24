@@ -116,7 +116,7 @@ const Footer = () => {
               <p className="text-white mt-5 font-opensans">
                 Get Legal Updates and Insights
               </p>
-              <div className="relative pt-4">
+              <div className="relative md:w-1/3 lg:w-full w-full pt-4">
                 <input
                   type="email"
                   placeholder="Your email address"

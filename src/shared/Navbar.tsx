@@ -60,7 +60,7 @@ const Navbar = () => {
 
             {/* sidebar mobile menu */}
             <div
-              className={`fixed z-[9999] h-full w-screen  ${
+              className={`fixed z-[9999]  h-full w-screen  ${
                 click ? "" : "hidden "
               } right-0 top-0 bg-black/50 backdrop-blur-sm  `}
             >
@@ -74,7 +74,7 @@ const Navbar = () => {
                   <NavLink
                     onClick={() => setClick(false)}
                     key={i}
-                    className="w-full   font-bold"
+                    className="w-full inline-block font-bold"
                     to={data.link}
                   >
                     {data.label}

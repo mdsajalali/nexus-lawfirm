@@ -5,3 +5,17 @@
 a.active {
   border-bottom: 1px solid #b98d44;
 }
+
+.swiper-pagination-bullet {
+  background: #b98d44 !important;
+}
+
+.swiper-pagination {
+  display: block;
+}
+
+@media (min-width: 450px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
