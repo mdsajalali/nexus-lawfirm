@@ -6,7 +6,7 @@ import { IoMdCheckboxOutline } from "react-icons/io";
 const AboutUs = () => {
   return (
     <Container>
-      <div className="py-10 md:py-[100px]  grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 md:gap-[133px]">
+      <div className="py-10 md:py-20  grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 md:gap-[133px]">
         <div>
           <img
             src={about_us}

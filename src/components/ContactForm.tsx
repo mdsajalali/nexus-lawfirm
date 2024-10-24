@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="bg-primary rounded-md p-5 md:p-[50px] max-w-[560px] relative">
+    <div className="bg-primary rounded-md p-5 md:p-[50px] md:w-[560px] w-[350px] relative">
       <h1 className="text-2xl text-white md:text-[40px] font-semibold md:pb-10 pb-5">
         Get in Touch with Us
       </h1>
@@ -38,7 +38,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-white rounded border text-black transition-all hover:bg-primary py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans"
+          className="bg-white w-full rounded border text-black transition-all hover:bg-primary py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans"
         >
           Send Message
         </button>

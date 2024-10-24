@@ -9,7 +9,7 @@ import "swiper/css";
 
 const PracticeAreasCard = () => {
   return (
-    <div className="pt-10 md:pt-[170px] xl:px-0   px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div className="pt-10 md:pt-20 xl:px-0   px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="max-w-[519px] mx-auto">
         <h1 className="text-2xl md:text-[40px] text-center md:text-start font-semibold font-opensans">
           Practice Areas

@@ -9,11 +9,11 @@ import AttorneyCard from "../../components/AttorneyCard";
 const OurTeams = () => {
   return (
     <Container>
-      <div className="py-14 md:py-[170px]">
+      <div className="py-14 md:py-20">
         <h1 className="text-center text-[20px] md:text-[40px] font-semibold">
           Our Legal Experts
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 pt-8 md:pt-[100px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 pt-8 md:pt-14">
           {attorneys?.map((attorney) => (
             <AttorneyCard key={attorney.id} {...attorney} />
           ))}

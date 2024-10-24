@@ -40,7 +40,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
     <Container>
       {/* Sidebar */}
       <HeroSidebar />
-      <div className="py-10 md:py-[100px] font-opensans grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[100px]">
+      <div className="py-10 md:py-20 font-opensans grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[100px]">
         <div className="  col-span-1 lg:col-span-7">
           <div>
             <h1 className="text-2xl font-bold">About</h1>

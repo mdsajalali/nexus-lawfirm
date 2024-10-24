@@ -7,7 +7,7 @@ import book from "/images/about/choose_us/book.svg";
 const Choose_Us = () => {
   return (
     <Container>
-      <div className="  py-20 md:py-[170px]">
+      <div className="  py-20 md:py-20">
         <div>
           <h1 className="text-center text-2xl md:text-[40px] font-semibold">
             Why clients choose us?

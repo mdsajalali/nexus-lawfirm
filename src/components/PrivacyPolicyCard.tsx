@@ -3,7 +3,7 @@ import Container from "../shared/Container";
 const PrivacyPolicyCard = () => {
   return (
     <Container>
-      <div className="py-10 md:py-[100px] font-opensans">
+      <div className="py-10 md:py-20 font-opensans">
         <div>
           <h1 className="text-[20px] md:text-2xl font-semibold">1. Information We Collect</h1>
           <div className="py-5">
