@@ -38,7 +38,9 @@ const BlogComponent = () => {
   const { id } = useParams<{ id: string }>();
   const [blog, setBlog] = useState<Blog | null>(null);
 
-  console.log("id", blog);
+  console.log("fetched blog", blog);
+
+  console.log("id", id)
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -50,12 +52,13 @@ const BlogComponent = () => {
         }
         const data: Blog[] = await response.json();
 
-        // const filteredBlog = data.find((item) => item.id === Number(id));
-        const filteredBlog = data.find((item) => item.id.toString() === id);
+        const filteredBlog = data.find((item) => item.id === Number(id));
 
+        console.log("filteredBlog One", filteredBlog);
 
         if (filteredBlog) {
           setBlog(filteredBlog);
+          console.log("filteredBlog blog", filteredBlog);
         } else {
           setBlog(null);
         }
