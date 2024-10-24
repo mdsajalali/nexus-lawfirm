@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../shared/Container";
 import about_us from "/images/about_us.png";
 import { IoMdCheckboxOutline } from "react-icons/io";
@@ -48,9 +49,11 @@ const AboutUs = () => {
           </div>
 
           <div className=" flex items-center md:justify-start justify-center">
-            <button className="bg-transparent rounded border  mt-5 md:mt-7 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
-              Learn more
-            </button>
+            <Link to="/criminal-law">
+              <button className="bg-transparent rounded border  mt-5 md:mt-7 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

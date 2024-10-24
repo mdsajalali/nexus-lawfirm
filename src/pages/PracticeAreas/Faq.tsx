@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import Container from "../../shared/Container";
+import { Link } from "react-router-dom";
 
 interface FAQ {
   question: string;
@@ -53,9 +54,11 @@ const Faq = () => {
             Find answers to some of the most common questions about our legal
             services and how we can help you.
           </p>
-          <button className="bg-transparent rounded border mt-5 md:mt-7 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
-            Contact Us
-          </button>
+          <Link to="/contact">
+            <button className="bg-transparent rounded border mt-5 md:mt-7 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
+              Contact Us
+            </button>
+          </Link>
         </div>
         <div>
           {faqData?.map((faq, index) => (
