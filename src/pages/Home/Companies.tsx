@@ -26,7 +26,7 @@ const Companies = () => {
           spaceBetween={20}
           loop={true}
           speed={400}
-          autoplay={{ delay: 1500 }}
+          autoplay={{ delay: 1800 }}
           slidesPerView="auto"
           breakpoints={{
             320: {

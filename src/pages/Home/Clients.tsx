@@ -16,7 +16,7 @@ const Clients = () => {
         alt="Hero Banner"
         className="w-full lg:h-[650px] h-[460px] object-cover"
       />
-      <div className="absolute right-0 py-10 lg:py-[100px] top-0 z-[9999] w-full text-white">
+      <div className="absolute right-0 py-10 lg:py-[100px] top-0 w-full text-white">
         <h1 className="md:text-2xl text-[20px] lg:text-[40px] font-semibold text-center">
           What Our Clients Say
         </h1>

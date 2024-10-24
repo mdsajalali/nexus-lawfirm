@@ -124,7 +124,7 @@ const Footer = () => {
                 />
                 <MdEmail
                   size={20}
-                  className="absolute right-2 hidden md:block top-6 text-secondary"
+                  className="absolute cursor-pointer right-2 hidden md:block top-6 text-secondary"
                 />
               </div>
             </div>
