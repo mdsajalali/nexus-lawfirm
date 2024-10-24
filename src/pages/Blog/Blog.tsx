@@ -47,7 +47,7 @@ const BlogComponent = () => {
         }
         const data: Blog[] = await response.json();
 
-        const filteredBlog = data.find((item) => item.id === parseInt(id!));
+        const filteredBlog = data.find((item) => item.id === Number(id));
 
         if (filteredBlog) {
           setBlog(filteredBlog);
