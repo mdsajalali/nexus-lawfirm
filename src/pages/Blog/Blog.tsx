@@ -38,15 +38,10 @@ const BlogComponent = () => {
   const { id } = useParams<{ id: string }>();
   const [blog, setBlog] = useState<Blog | null>(null);
 
-  console.log("fetched blog", blog);
-
-  console.log("id", id);
-
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await fetch("/single-blog.json");
-        console.log("Hello");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -54,11 +49,8 @@ const BlogComponent = () => {
 
         const filteredBlog = data.find((item) => item.id === Number(id));
 
-        console.log("filteredBlog One", filteredBlog);
-
         if (filteredBlog) {
           setBlog(filteredBlog);
-          console.log("filteredBlog blog", filteredBlog);
         } else {
           setBlog(null);
         }
@@ -86,9 +78,7 @@ const BlogComponent = () => {
             {blog ? (
               <BlogCard blog={blog} />
             ) : (
-              <div className="font-opensans text-center py-5">
-                Blog not found.
-              </div>
+              <div className="font-opensans text-center py-5">Loading...</div>
             )}
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
