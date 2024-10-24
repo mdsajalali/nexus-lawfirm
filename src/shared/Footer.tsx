@@ -1,5 +1,5 @@
 import Container from "./Container";
-import logo from "../images/footer_logo.png";
+import logo from "/images/footer_logo.png";
 import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -124,7 +124,7 @@ const Footer = () => {
                 />
                 <MdEmail
                   size={20}
-                  className="absolute right-2 hidden md:block top-6 text-secondary"
+                  className="absolute cursor-pointer right-2 hidden md:block top-6 text-secondary"
                 />
               </div>
             </div>

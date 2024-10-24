@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "/images/logo.png";
 import Container from "./Container";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";

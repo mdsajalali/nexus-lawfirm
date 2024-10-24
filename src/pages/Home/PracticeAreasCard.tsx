@@ -1,13 +1,13 @@
-import family_law from "../images/practice-area/family_law.svg";
-import business_law from "../images/practice-area/business_law.svg";
-import estate_planning_law from "../images/practice-area/estate_planning_law.svg";
-import criminal_law from "../images/practice-area/criminal_law.svg";
+import family_law from "/images/practice-area/family_law.svg";
+import business_law from "/images/practice-area/business_law.svg";
+import estate_planning_law from "/images/practice-area/estate_planning_law.svg";
+import criminal_law from "/images/practice-area/criminal_law.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const PracticeAreas = () => {
+const PracticeAreasCard = () => {
   return (
     <div className="pt-10 md:pt-[170px] xl:px-0   px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="max-w-[519px] mx-auto">
@@ -22,13 +22,12 @@ const PracticeAreas = () => {
       </div>
       <div>
         <Swiper
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation, Autoplay, Pagination]}
           spaceBetween={24}
+          loop={true}
+          speed={400}
+          autoplay={{ delay: 1500 }}
           slidesPerView={1}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
           breakpoints={{
             375: {
               slidesPerView: 1,
@@ -69,7 +68,7 @@ const PracticeAreas = () => {
   );
 };
 
-export default PracticeAreas;
+export default PracticeAreasCard;
 
 const practiceAreaData = [
   {

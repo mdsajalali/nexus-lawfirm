@@ -1,18 +1,11 @@
-import client_banner from "../images/client_banner.png";
-import Container from "../shared/Container";
-
-import user from "../images/client-satisfaction/user.svg";
-import multiple_user from "../images/client-satisfaction/multiple_user.svg";
-import book from "../images/client-satisfaction/book.svg";
-import verify from "../images/client-satisfaction/verify.svg";
+import client_banner from "/images/client_banner.png";
+import user from "/images/client-satisfaction/user.svg";
+import multiple_user from "/images/client-satisfaction/multiple_user.svg";
+import book from "/images/client-satisfaction/book.svg";
+import verify from "/images/client-satisfaction/verify.svg";
+import Container from "../../shared/Container";
 const ClientSatisfactionRate = () => {
   return (
-    // <div className="relative">
-    //   <img
-    //     src={client_banner}
-    //     alt="Client Banner"
-    //     className="w-full h-[307px] md:h-[432px]  object-cover"
-    //   />
     <div
       className="relative w-full h-[307px] md:h-[432px] bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${client_banner})` }}

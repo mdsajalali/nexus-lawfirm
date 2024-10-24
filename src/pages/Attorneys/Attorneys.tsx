@@ -1,7 +1,7 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/attorneys/attorneys_banner.png";
+import banner from "/images/attorneys/attorneys_banner.png";
 import AttorneysTeam from "./AttorneysTeam";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 
 const Attorneys = () => {
   return (

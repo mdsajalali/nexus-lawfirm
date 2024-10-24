@@ -1,4 +1,4 @@
-import contact_bg from "../images/contactus_bg.png";
+import contact_bg from "/images/contactus_bg.png";
 
 const ContactUs = () => {
   return (

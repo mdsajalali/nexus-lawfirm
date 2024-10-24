@@ -2,7 +2,7 @@
   {
     "id": 1,
     "user": {
-      "img": "../src/images/our-teams/attorney_one.png",
+      "img": "/images/our-teams/attorney_one.png",
       "name": "John Doe",
       "designation": "Criminal Lawyer",
       "overview": "With over 15 years of experience, John Doe is a skilled criminal defense attorney, known for his strategic approach and dedication to protecting clients' rights.",
@@ -57,7 +57,7 @@
   {
     "id": 2,
     "user": {
-      "img": "../src/images/our-teams/attorney_two.png",
+      "img": "/images/our-teams/attorney_two.png",
       "name": "Jane Smith",
       "designation": "Family Law Attorney",
       "overview": "Jane Smith specializes in family law and has over a decade of experience in handling divorce and custody cases.",
@@ -102,7 +102,7 @@
   {
     "id": 3,
     "user": {
-      "img": "../src/images/our-teams/attorney_three.png",
+      "img": "/images/our-teams/attorney_three.png",
       "name": "Robert Brown",
       "designation": "Business Law Specialist",
       "overview": "Robert Brown provides legal counsel to businesses on a range of corporate issues, including mergers and acquisitions.",
@@ -148,7 +148,7 @@
   {
     "id": 4,
     "user": {
-      "img": "../src/images/our-teams/attorney_four.png",
+      "img": "/images/our-teams/attorney_four.png",
       "name": "Emily Johnson",
       "designation": "Estate Planning Attorney",
       "overview": "Emily Johnson specializes in intellectual property law, protecting the rights of creators and inventors.",
@@ -188,7 +188,7 @@
   {
     "id": 5,
     "user": {
-      "img": "../src/images/our-teams/attorney_five.png",
+      "img": "/images/our-teams/attorney_five.png",
       "name": "Laura Green",
       "designation": "Juvenile Defense Attorney",
       "overview": "Laura Green has extensive experience in tax law and helps clients with tax planning and litigation.",
@@ -228,7 +228,7 @@
   {
     "id": 6,
     "user": {
-      "img": "../src/images/our-teams/attorney_six.png",
+      "img": "/images/our-teams/attorney_six.png",
       "name": "Christopher Lee",
       "designation": "Business Law Attorney",
       "overview": "Christopher Lee is dedicated to helping clients navigate the complexities of immigration law.",
@@ -274,7 +274,7 @@
   {
     "id": 7,
     "user": {
-      "img": "../src/images/our-teams/attorney_seven.png",
+      "img": "/images/our-teams/attorney_seven.png",
       "name": "Samantha Harris",
       "designation": "Employment Law Specialist",
       "overview": "Samantha Harris fights for the rights of those injured due to the negligence of others.",
@@ -320,7 +320,7 @@
   {
     "id": 8,
     "user": {
-      "img": "../src/images/our-teams/attorney_eight.png",
+      "img": "/images/our-teams/attorney_eight.png",
       "name": "James Clark",
       "designation": "Medical Malpractice Attorney",
       "overview": "James Clark specializes in real estate transactions and litigation.",
@@ -364,7 +364,7 @@
   {
     "id": 9,
     "user": {
-      "img": "../src/images/our-teams/attorney_nine.png",
+      "img": "/images/our-teams/attorney_nine.png",
       "name": "Olivia Martinez",
       "designation": "Estate Planning Attorney",
       "overview": "Olivia Martinez is passionate about environmental law and advocates for sustainable practices.",
@@ -410,7 +410,7 @@
   {
     "id": 10,
     "user": {
-      "img": "../src/images/our-teams/attorney_ten.png",
+      "img": "/images/our-teams/attorney_ten.png",
       "name": "Daniel Thompson",
       "designation": "Real Estate Law Attorney",
       "overview": "Daniel Thompson specializes in bankruptcy law and helps clients navigate financial difficulties.",
@@ -454,7 +454,7 @@
   {
     "id": 11,
     "user": {
-      "img": "../src/images/our-teams/attorney_eleven.png",
+      "img": "/images/our-teams/attorney_eleven.png",
       "name": "Isabella Robinson",
       "designation": "Immigration Law Specialist",
       "overview": "Isabella Robinson is dedicated to protecting workers' rights and advocating for fair labor practices.",
@@ -498,7 +498,7 @@
   {
     "id": 12,
     "user": {
-      "img": "../src/images/our-teams/attorney_twelve.png",
+      "img": "/images/our-teams/attorney_twelve.png",
       "name": "Matthew Wright",
       "designation": "Criminal Defense Attorney",
       "overview": "Matthew Wright specializes in insurance law and helps clients with claims and disputes.",

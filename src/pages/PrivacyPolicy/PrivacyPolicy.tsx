@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/privacy_policy_banner.png";
+import banner from "/images/privacy_policy_banner.png";
 import PrivacyPolicyCard from "../../components/PrivacyPolicyCard";
 
 const PrivacyPolicy = () => {

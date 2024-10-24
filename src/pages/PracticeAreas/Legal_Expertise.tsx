@@ -1,12 +1,12 @@
 import HeroSidebar from "../../components/HeroSidebar";
-import business_law from "../../images/practice-area/business_law.svg";
-import criminal_law from "../../images/practice-area/criminal_law.svg";
-import employment_law from "../../images/practice-area/employment_law.svg";
-import estate_planning_law from "../../images/practice-area/estate_planning_law.svg";
-import family_law from "../../images/practice-area/family_law.svg";
-import immigration_law from "../../images/practice-area/immigration_law.svg";
-import personal_injury from "../../images/practice-area/personal_injury.svg";
-import real_estate_law from "../../images/practice-area/real_estate_law.svg";
+import business_law from "/images/practice-area/business_law.svg";
+import criminal_law from "/images/practice-area/criminal_law.svg";
+import employment_law from "/images/practice-area/employment_law.svg";
+import estate_planning_law from "/images/practice-area/estate_planning_law.svg";
+import family_law from "/images/practice-area/family_law.svg";
+import immigration_law from "/images/practice-area/immigration_law.svg";
+import personal_injury from "/images/practice-area/personal_injury.svg";
+import real_estate_law from "/images/practice-area/real_estate_law.svg";
 import Container from "../../shared/Container";
 const Legal_Expertise = () => {
   return (

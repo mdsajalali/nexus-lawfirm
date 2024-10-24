@@ -1,14 +1,13 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/blogs/blogs_banner.png";
-import { useEffect, useState } from "react";
+import banner from "/images/blogs/blogs_banner.png";
 import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";
-import RecentBlogs from "../../components/RecentBlogs";
-import BlogCategories from "../../components/BlogCategories";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 import HeroSidebar from "../../components/HeroSidebar";
-import BlogsSearch from "../../components/BlogsSearch";
+import useBlogs from "../../hooks/useBlogs";
+import useBlogStore from "../../store/BlogsStore";
+import BlogsSidebar from "../../shared/BlogsSidebar";
 
 interface BlogProps {
   img: string;
@@ -22,30 +21,19 @@ interface BlogProps {
 }
 
 const Blogs = () => {
-  const [blogs, setBlogs] = useState<BlogProps[]>([]);
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const [activePage, setActivePage] = useState<number>(1);
-  const blogsPerPage = 6;
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const { blogs, isLoading } = useBlogs();
+  const {
+    searchQuery,
+    selectedCategory,
+    activePage,
+    setActivePage,
+    blogsPerPage,
+  } = useBlogStore();
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch("/blogs.json");
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setBlogs(data);
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
-      }
-    };
+  if (isLoading)
+    return <div className="text-center my-5 font-opensans">Loading...</div>;
 
-    fetchBlogs();
-  }, []);
-
-  const filteredBlogs = blogs.filter((blog) => {
+  const filteredBlogs = blogs.filter((blog: BlogProps) => {
     const matchesSearch = blog.title
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
@@ -74,7 +62,7 @@ const Blogs = () => {
             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">
               {currentBlogs.length > 0 ? (
-                currentBlogs.map((blog, idx) => (
+                currentBlogs.map((blog: BlogProps, idx: number) => (
                   <BlogsCard key={idx} blog={blog} />
                 ))
               ) : (
@@ -88,15 +76,7 @@ const Blogs = () => {
             />
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">
-            <BlogsSearch
-              searchQuery={searchQuery}
-              setSearchQuery={setSearchQuery}
-            />
-            <RecentBlogs />
-            <BlogCategories
-              selectedCategory={selectedCategory}
-              setSelectedCategory={setSelectedCategory}
-            />
+            <BlogsSidebar />
           </div>
         </div>
       </Container>

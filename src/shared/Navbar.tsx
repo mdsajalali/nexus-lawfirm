@@ -2,12 +2,12 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "/images/logo.png";
 import Container from "./Container";
-import hero_banner from "../images/hero_banner.png";
+import hero_banner from "/images/hero_banner.png";
 import { FaRegMessage } from "react-icons/fa6";
 import TopNav from "../components/TopNav";
-import Hero from "../pages/Hero";
+import Hero from "../pages/Home/Hero";
 import navLinks from "../components/navItems";
 import HeroSidebar from "../components/HeroSidebar";
 import ScheduleConsultationModal from "../components/ScheduleConsultationModal";
@@ -26,7 +26,7 @@ const Navbar = () => {
       <img
         src={hero_banner}
         alt="Hero Banner"
-        className="w-full h-[100vh]  object-cover"
+        className="w-full h-[75vh] md:h-[100vh]  object-cover"
       />
       <main className="absolute right-0 top-0 z-[9999] w-full   text-white">
         <TopNav />
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className=" hidden md:block">
-              <div className="flex md:gap-3 gap-4 lg:gap-8">
+              <div className="flex md:gap-6 gap-4 lg:gap-8">
                 {navLinks?.map((data, idx) => (
                   <div key={idx}>
                     <li className="list-none">
@@ -93,7 +93,7 @@ const Navbar = () => {
             >
               <div className="flex items-center gap-2 lg:gap-[10px]   ">
                 <FaRegMessage size={18} />
-                <span className="text-[14px] lg:text-[16px] font-semibold font-opensans">
+                <span className="text-[14px] xl:block md:hidden block lg:text-[16px] font-semibold font-opensans">
                   Request Consultation
                 </span>
               </div>

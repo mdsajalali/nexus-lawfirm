@@ -1,7 +1,7 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/contact_banner.png";
+import banner from "/images/contact_banner.png";
 import ContactInfo from "../../components/ContactInfo";
-import ScheduleConsultation from "../ScheduleConsultation";
+import ScheduleConsultation from "../../shared/ScheduleConsultation";
 import SocialContact from "../../components/SocialContact";
 
 const Contact = () => {
