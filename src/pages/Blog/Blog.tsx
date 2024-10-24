@@ -1,7 +1,6 @@
 import SharedNavbar from "../../shared/SharedNavbar";
 import banner from "../../images/blog/blog_banner.png";
 import ScheduleConsultation from "../ScheduleConsultation";
-import RecentBlogs from "../../components/RecentBlogs";
 import { CiSearch } from "react-icons/ci";
 import Container from "../../shared/Container";
 import HeroSidebar from "../../components/HeroSidebar";
@@ -83,7 +82,7 @@ const Blog = () => {
               <CiSearch size={20} className="text-[#3D4C56] cursor-pointer" />
             </div>
             {/* Recent Blogs */}
-            <RecentBlogs />
+            {/* <RecentBlogs /> */}
             {/* TODO: Blog Categories */}
             {/* <BlogCategories /> */}
           </div>

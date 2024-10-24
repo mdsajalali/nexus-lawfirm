@@ -23,6 +23,7 @@ interface BlogProps {
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState<BlogProps[]>([]);
+  const [recentBlogs, setRecentBlogs] = useState<BlogProps[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [activePage, setActivePage] = useState<number>(1);
   const blogsPerPage = 6;
@@ -36,7 +37,8 @@ const Blogs = () => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setBlogs(data);
+        setBlogs(data.blogs);
+        setRecentBlogs(data.recent_blogs);
       } catch (error) {
         console.error("Error fetching blogs:", error);
       }
@@ -92,7 +94,14 @@ const Blogs = () => {
               searchQuery={searchQuery}
               setSearchQuery={setSearchQuery}
             />
-            <RecentBlogs />
+            {/* Recent Blogs */}
+            <div className="pt-10 pb-[100px]">
+              <h1 className="text-2xl font-semibold  ">Recent Blogs</h1>
+              {recentBlogs.map((blog) => (
+                <RecentBlogs key={blog.id} blog={blog} />
+              ))}
+            </div>
+
             <BlogCategories
               selectedCategory={selectedCategory}
               setSelectedCategory={setSelectedCategory}

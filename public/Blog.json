@@ -189,5 +189,165 @@
       }
     ],
     "conclusion": "Being informed about your rights in estate planning ensures that you provide the best service to your clients while protecting your interests."
+  },
+  {
+    "id": 7,
+    "img": "../src/images/blogs/blog_three.png",
+    "name": "By William Harrison",
+    "date": "02 May, 2024",
+    "category": "Real estate law",
+    "intro": "Navigating real estate transactions requires understanding legal obligations and rights. From purchasing a home to rental agreements, having the right information can prevent disputes.",
+    "wage_rights": [
+      {
+        "desc": "In real estate, wage rights often pertain to property management and real estate agents. You should be aware of:",
+        "rights": [
+          "Commission agreements.",
+          "Payment for services rendered in property management."
+        ]
+      }
+    ],
+    "harassment_prevention": "Real estate professionals must ensure that their practices are free from harassment. Training and policies should be in place to address any concerns.",
+    "discrimination_protection": "Fair housing laws prohibit discrimination based on race, color, national origin, religion, sex, familial status, or disability. If you suspect discrimination, report it immediately.",
+    "workplace_safety": "Real estate agents and property managers should ensure their working environments are safe. Follow all safety protocols when showing properties.",
+    "family_medical_leave": "Real estate professionals are entitled to family and medical leave under FMLA. Understand your rights to ensure proper coverage during your absence.",
+    "violated": [
+      {
+        "desc": "If you encounter issues in real estate law, consider these steps:",
+        "rights": [
+          "Consult with a real estate lawyer for advice.",
+          "Document all agreements and interactions.",
+          "Report any violations to the appropriate real estate board."
+        ]
+      }
+    ],
+    "conclusion": "Being informed about your rights in real estate can help you navigate the complexities of transactions and ensure you are treated fairly."
+  },
+  {
+    "id": 8,
+    "img": "../src/images/blogs/blog_four.png",
+    "name": "By John Doe",
+    "date": "29 April, 2023",
+    "category": "Criminal law",
+    "intro": "Understanding your rights during criminal proceedings is vital. Knowing how to protect yourself can make a significant difference in the outcome of your case.",
+    "wage_rights": [
+      {
+        "desc": "If you work in the criminal justice field, your wage rights may include:",
+        "rights": [
+          "Fair compensation for your role.",
+          "Overtime pay in line with legal standards."
+        ]
+      }
+    ],
+    "harassment_prevention": "Harassment in the criminal justice field can lead to serious consequences. Organizations must have clear policies to address such behavior.",
+    "discrimination_protection": "Discrimination in law enforcement or legal proceedings is prohibited. If you face discrimination, seek legal advice immediately.",
+    "workplace_safety": "Safety is paramount in the criminal justice field. Report any unsafe conditions to ensure a secure working environment.",
+    "family_medical_leave": "Professionals in this field are entitled to family and medical leave under FMLA. Ensure your rights are protected during such times.",
+    "violated": [
+      {
+        "desc": "If your rights are violated in criminal law, consider these steps:",
+        "rights": [
+          "Seek legal counsel to discuss your options.",
+          "Document every detail related to your case.",
+          "Report misconduct to the relevant authorities."
+        ]
+      }
+    ],
+    "conclusion": "Being informed about your rights in criminal law can protect you during challenging times. Always consult with a qualified attorney."
+  },
+  {
+    "id": 9,
+    "img": "../src/images/blogs/recent-blogs/recent_blog_one.png",
+    "name": "By John Doe",
+    "date": "29 April, 2023",
+    "category": "Criminal law",
+    "intro": "Understanding your rights during criminal proceedings is vital. Knowing how to protect yourself can make a significant difference in the outcome of your case.",
+    "wage_rights": [
+      {
+        "desc": "If you work in the criminal justice field, your wage rights may include:",
+        "rights": [
+          "Fair compensation for your role.",
+          "Overtime pay in line with legal standards."
+        ]
+      }
+    ],
+    "harassment_prevention": "Harassment in the criminal justice field can lead to serious consequences. Organizations must have clear policies to address such behavior.",
+    "discrimination_protection": "Discrimination in law enforcement or legal proceedings is prohibited. If you face discrimination, seek legal advice immediately.",
+    "workplace_safety": "Safety is paramount in the criminal justice field. Report any unsafe conditions to ensure a secure working environment.",
+    "family_medical_leave": "Professionals in this field are entitled to family and medical leave under FMLA. Ensure your rights are protected during such times.",
+    "violated": [
+      {
+        "desc": "If your rights are violated in criminal law, consider these steps:",
+        "rights": [
+          "Seek legal counsel to discuss your options.",
+          "Document every detail related to your case.",
+          "Report misconduct to the relevant authorities."
+        ]
+      }
+    ],
+    "conclusion": "Being informed about your rights in criminal law can protect you during challenging times. Always consult with a qualified attorney."
+  },
+  {
+    "id": 10,
+    "img": "../src/images/blogs/recent-blogs/recent_blog_two.png",
+    "name": "By John Doe",
+    "date": "29 April, 2023",
+    "category": "Criminal law",
+    "intro": "Understanding your rights during criminal proceedings is vital. Knowing how to protect yourself can make a significant difference in the outcome of your case.",
+    "wage_rights": [
+      {
+        "desc": "If you work in the criminal justice field, your wage rights may include:",
+        "rights": [
+          "Fair compensation for your role.",
+          "Overtime pay in line with legal standards."
+        ]
+      }
+    ],
+    "harassment_prevention": "Harassment in the criminal justice field can lead to serious consequences. Organizations must have clear policies to address such behavior.",
+    "discrimination_protection": "Discrimination in law enforcement or legal proceedings is prohibited. If you face discrimination, seek legal advice immediately.",
+    "workplace_safety": "Safety is paramount in the criminal justice field. Report any unsafe conditions to ensure a secure working environment.",
+    "family_medical_leave": "Professionals in this field are entitled to family and medical leave under FMLA. Ensure your rights are protected during such times.",
+    "violated": [
+      {
+        "desc": "If your rights are violated in criminal law, consider these steps:",
+        "rights": [
+          "Seek legal counsel to discuss your options.",
+          "Document every detail related to your case.",
+          "Report misconduct to the relevant authorities."
+        ]
+      }
+    ],
+    "conclusion": "Being informed about your rights in criminal law can protect you during challenging times. Always consult with a qualified attorney."
+  },
+  {
+    "id": 11,
+    "img": "../src/images/blogs/recent-blogs/recent_blog_three.png",
+    "name": "By John Doe",
+    "date": "29 April, 2023",
+    "category": "Criminal law",
+    "intro": "Understanding your rights during criminal proceedings is vital. Knowing how to protect yourself can make a significant difference in the outcome of your case.",
+    "wage_rights": [
+      {
+        "desc": "If you work in the criminal justice field, your wage rights may include:",
+        "rights": [
+          "Fair compensation for your role.",
+          "Overtime pay in line with legal standards."
+        ]
+      }
+    ],
+    "harassment_prevention": "Harassment in the criminal justice field can lead to serious consequences. Organizations must have clear policies to address such behavior.",
+    "discrimination_protection": "Discrimination in law enforcement or legal proceedings is prohibited. If you face discrimination, seek legal advice immediately.",
+    "workplace_safety": "Safety is paramount in the criminal justice field. Report any unsafe conditions to ensure a secure working environment.",
+    "family_medical_leave": "Professionals in this field are entitled to family and medical leave under FMLA. Ensure your rights are protected during such times.",
+    "violated": [
+      {
+        "desc": "If your rights are violated in criminal law, consider these steps:",
+        "rights": [
+          "Seek legal counsel to discuss your options.",
+          "Document every detail related to your case.",
+          "Report misconduct to the relevant authorities."
+        ]
+      }
+    ],
+    "conclusion": "Being informed about your rights in criminal law can protect you during challenging times. Always consult with a qualified attorney."
   }
 ]
