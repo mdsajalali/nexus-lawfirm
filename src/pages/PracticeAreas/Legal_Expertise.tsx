@@ -15,7 +15,7 @@ const Legal_Expertise = () => {
       <div className="xl:block hidden">
         <HeroSidebar />
       </div>
-      <div className="py-10 md:py-[100px]">
+      <div className="py-10 md:py-20">
         <div className="text-center max-w-[804px] mx-auto">
           <h1 className="text-2xl md:text-[40px] font-semibold">
             Our Legal Expertise
@@ -30,7 +30,7 @@ const Legal_Expertise = () => {
           {legalExpertisData?.map((data) => (
             <div
               key={data.id}
-              className="bg-white max-w-[424px] rounded-md  text-center hover:bg-primary hover:text-white transition-all hover:-translate-y-2  border border-[#D0D4D6] pt-10 pb-5 px-5 duration-300  font-opensans"
+              className="bg-white max-w-[424px] rounded-md  text-center hover:bg-primary hover:text-white transition-all hover:scale-95  border border-[#D0D4D6] pt-10 pb-5 px-5 duration-300  font-opensans"
             >
               <img
                 src={data?.img}

@@ -16,7 +16,7 @@ const ScheduleConsultation = () => {
         </h1>
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-white rounded border text-black transition-all hover:bg-[#162834] py-[14px] px-10 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans"
+          className="bg-white rounded border text-black transition-all hover:bg-[#162834] py-[14px]   px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans"
         >
           Book your consultation
         </button>

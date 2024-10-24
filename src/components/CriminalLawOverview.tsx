@@ -4,7 +4,7 @@ import criminal_law_img from "/images/criminal_law_img.png";
 const CriminalLawOverview = () => {
   return (
     <Container>
-      <div className="py-10 md:py-[100px] grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 lg:gap-[146px] font-opensans place-items-center">
+      <div className="py-10 md:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 lg:gap-[146px] font-opensans place-items-center">
         <div>
           <h1 className="md:text-[40px] font-semibold text-2xl">Overview</h1>
           <div>

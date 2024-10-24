@@ -36,7 +36,7 @@ const termsData = [
 const TermsServiceCard = () => {
   return (
     <Container>
-      <div className="py-10 md:py-[100px] font-opensans">
+      <div className="py-10 md:py-20 font-opensans">
         {termsData.map((term, index) => (
           <div key={index} className="my-4 md:my-7">
             <h1 className="text-[20px] md:text-2xl font-semibold">
