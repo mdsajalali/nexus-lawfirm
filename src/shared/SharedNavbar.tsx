@@ -103,7 +103,7 @@ const SharedNavbar = ({
             >
               <div className="flex items-center gap-2 lg:gap-[10px]   ">
                 <FaRegMessage size={18} />
-                <span className="text-[14px] lg:text-[16px] font-semibold font-opensans">
+                <span className="text-[14px] xl:block md:hidden block lg:text-[16px] font-semibold font-opensans">
                   Request Consultation
                 </span>
               </div>
