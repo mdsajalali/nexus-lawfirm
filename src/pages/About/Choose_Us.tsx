@@ -1,8 +1,8 @@
 import Container from "../../shared/Container";
-import experienced_attorneys from "../../images/about/choose_us/experienced_attorneys.svg";
-import client_focused_service from "../../images/about/choose_us/client_focused_service.svg";
-import proven_results from "../../images/about/choose_us/proven_results.svg";
-import book from "../../images/about/choose_us/book.svg";
+import experienced_attorneys from "/images/about/choose_us/experienced_attorneys.svg";
+import client_focused_service from "/images/about/choose_us/client_focused_service.svg";
+import proven_results from "/images/about/choose_us/proven_results.svg";
+import book from "/images/about/choose_us/book.svg";
 
 const Choose_Us = () => {
   return (
@@ -27,7 +27,9 @@ const Choose_Us = () => {
               <h1 className="py-4 text-[20px] md:text-2xl font-semibold font-opensans">
                 {data?.title}
               </h1>
-              <p className="font-opensans text-[14px] md:text-[16px]">{data?.desc}</p>
+              <p className="font-opensans text-[14px] md:text-[16px]">
+                {data?.desc}
+              </p>
             </div>
           ))}
         </div>

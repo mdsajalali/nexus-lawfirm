@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/terms_service_banner.png";
+import banner from "/images/terms_service_banner.png";
 import TermsServiceCard from "../../components/TermsServiceCard";
 
 const TermsService = () => {

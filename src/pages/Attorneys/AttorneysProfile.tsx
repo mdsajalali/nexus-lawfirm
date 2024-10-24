@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/attorneys/attorneys_banner.png";
+import banner from "/images/attorneys/attorneys_banner.png";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AttorneysProfileCard from "../../components/AttorneysProfileCard";

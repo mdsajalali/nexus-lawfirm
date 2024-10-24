@@ -1,5 +1,5 @@
 import Container from "../../shared/Container";
-import Legal_Legacy_img from "../../images/about/Legal_Legacy_img.png";
+import Legal_Legacy_img from "/images/about/Legal_Legacy_img.png";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import HeroSidebar from "../../components/HeroSidebar";
 

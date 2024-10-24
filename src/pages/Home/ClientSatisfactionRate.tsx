@@ -1,8 +1,8 @@
-import client_banner from "../../images/client_banner.png";
-import user from "../../images/client-satisfaction/user.svg";
-import multiple_user from "../../images/client-satisfaction/multiple_user.svg";
-import book from "../../images/client-satisfaction/book.svg";
-import verify from "../../images/client-satisfaction/verify.svg";
+import client_banner from "/images/client_banner.png";
+import user from "/images/client-satisfaction/user.svg";
+import multiple_user from "/images/client-satisfaction/multiple_user.svg";
+import book from "/images/client-satisfaction/book.svg";
+import verify from "/images/client-satisfaction/verify.svg";
 import Container from "../../shared/Container";
 const ClientSatisfactionRate = () => {
   return (

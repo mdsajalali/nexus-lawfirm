@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import banner from "../../images/blogs/blogs_banner.png";
+import banner from "/images/blogs/blogs_banner.png";
 import BlogsCard from "../../components/BlogsCard";
 import Container from "../../shared/Container";
 import BlogsPagination from "../../components/BlogsPagination";

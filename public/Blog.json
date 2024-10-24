@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/images/blogs/blog_one.png",
+    "img": "/images/blogs/blog_one.png",
     "name": "By Benjamin Cooper",
     "date": "24 May, 2024",
     "category": "Immigration law",
@@ -33,7 +33,7 @@
   },
   {
     "id": 2,
-    "img": "../src/images/blogs/blog_two.png",
+    "img": "/images/blogs/blog_two.png",
     "name": "By Evelyn Carter",
     "date": "22 May, 2024",
     "category": "Employment law",
@@ -64,7 +64,7 @@
   },
   {
     "id": 3,
-    "img": "../src/images/blogs/blog_three.png",
+    "img": "/images/blogs/blog_three.png",
     "name": "By William Harrison",
     "date": "02 May, 2024",
     "category": "Real estate law",
@@ -96,7 +96,7 @@
   },
   {
     "id": 4,
-    "img": "../src/images/blogs/blog_four.png",
+    "img": "/images/blogs/blog_four.png",
     "name": "By John Doe",
     "date": "29 April, 2023",
     "category": "Criminal law",
@@ -128,7 +128,7 @@
   },
   {
     "id": 5,
-    "img": "../src/images/blogs/blog_five.png",
+    "img": "/images/blogs/blog_five.png",
     "name": "By Olivia Richardson",
     "date": "16 April, 2024",
     "category": "Personal injury",
@@ -160,7 +160,7 @@
   },
   {
     "id": 6,
-    "img": "../src/images/blogs/blog_six.png",
+    "img": "/images/blogs/blog_six.png",
     "name": "By Sophia Martinez",
     "date": "11 April, 2023",
     "category": "Estate planning",
@@ -192,7 +192,7 @@
   },
   {
     "id": 7,
-    "img": "../src/images/blogs/blog_three.png",
+    "img": "/images/blogs/blog_three.png",
     "name": "By William Harrison",
     "date": "02 May, 2024",
     "category": "Real estate law",
@@ -224,7 +224,7 @@
   },
   {
     "id": 8,
-    "img": "../src/images/blogs/blog_four.png",
+    "img": "/images/blogs/blog_four.png",
     "name": "By John Doe",
     "date": "29 April, 2023",
     "category": "Criminal law",
@@ -256,7 +256,7 @@
   },
   {
     "id": 9,
-    "img": "../src/images/blogs/recent-blogs/recent_blog_one.png",
+    "img": "/images/blogs/recent-blogs/recent_blog_one.png",
     "name": "By John Doe",
     "date": "29 April, 2023",
     "category": "Criminal law",
@@ -288,7 +288,7 @@
   },
   {
     "id": 10,
-    "img": "../src/images/blogs/recent-blogs/recent_blog_two.png",
+    "img": "/images/blogs/recent-blogs/recent_blog_two.png",
     "name": "By John Doe",
     "date": "29 April, 2023",
     "category": "Criminal law",
@@ -320,7 +320,7 @@
   },
   {
     "id": 11,
-    "img": "../src/images/blogs/recent-blogs/recent_blog_three.png",
+    "img": "/images/blogs/recent-blogs/recent_blog_three.png",
     "name": "By John Doe",
     "date": "29 April, 2023",
     "category": "Criminal law",

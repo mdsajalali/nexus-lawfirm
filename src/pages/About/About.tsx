@@ -1,5 +1,5 @@
 import SharedNavbar from "../../shared/SharedNavbar";
-import about_hero from "../../images/about/about_hero.png";
+import about_hero from "/images/about/about_hero.png";
 import Clients from "../Home/Clients";
 import Companies from "../Home/Companies";
 import ScheduleConsultation from "../../shared/ScheduleConsultation";

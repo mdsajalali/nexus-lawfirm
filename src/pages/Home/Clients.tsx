@@ -1,8 +1,8 @@
-import client_banner from "../../images/clients/client_bg.png";
-import client_one from "../../images/clients/client_one.png";
-import client_two from "../../images/clients/client_two.png";
-import client_three from "../../images/clients/client_three.png";
-import quote_icon from "../../images/clients/quote_icon.svg";
+import client_banner from "/images/clients/client_bg.png";
+import client_one from "/images/clients/client_one.png";
+import client_two from "/images/clients/client_two.png";
+import client_three from "/images/clients/client_three.png";
+import quote_icon from "/images/clients/quote_icon.svg";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

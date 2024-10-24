@@ -1,7 +1,7 @@
-import company_one from "../../images/companies/company_one.png";
-import company_two from "../../images/companies/company_two.png";
-import company_three from "../../images/companies/company_three.png";
-import company_four from "../../images/companies/company_four.png";
+import company_one from "/images/companies/company_one.png";
+import company_two from "/images/companies/company_two.png";
+import company_three from "/images/companies/company_three.png";
+import company_four from "/images/companies/company_four.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";

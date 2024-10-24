@@ -1,5 +1,5 @@
 import Container from "../shared/Container";
-import criminal_law_img from "../images/criminal_law_img.png";
+import criminal_law_img from "/images/criminal_law_img.png";
 
 const CriminalLawOverview = () => {
   return (

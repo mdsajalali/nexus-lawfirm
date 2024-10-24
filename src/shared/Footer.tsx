@@ -1,5 +1,5 @@
 import Container from "./Container";
-import logo from "../images/footer_logo.png";
+import logo from "/images/footer_logo.png";
 import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";

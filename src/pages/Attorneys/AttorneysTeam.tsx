@@ -1,18 +1,18 @@
 import AttorneyCard from "../../components/AttorneyCard";
 import HeroSidebar from "../../components/HeroSidebar";
 import Container from "../../shared/Container";
-import attorney_one from "../../images/our-teams/attorney_one.png";
-import attorney_two from "../../images/our-teams/attorney_two.png";
-import attorney_three from "../../images/our-teams/attorney_three.png";
-import attorney_four from "../../images/our-teams/attorney_four.png";
-import attorney_five from "../../images/our-teams/attorney_five.png";
-import attorney_six from "../../images/our-teams/attorney_six.png";
-import attorney_seven from "../../images/our-teams/attorney_seven.png";
-import attorney_eight from "../../images/our-teams/attorney_eight.png";
-import attorney_nine from "../../images/our-teams/attorney_nine.png";
-import attorney_ten from "../../images/our-teams/attorney_ten.png";
-import attorney_eleven from "../../images/our-teams/attorney_eleven.png";
-import attorney_twelve from "../../images/our-teams/attorney_twelve.png";
+import attorney_one from "/images/our-teams/attorney_one.png";
+import attorney_two from "/images/our-teams/attorney_two.png";
+import attorney_three from "/images/our-teams/attorney_three.png";
+import attorney_four from "/images/our-teams/attorney_four.png";
+import attorney_five from "/images/our-teams/attorney_five.png";
+import attorney_six from "/images/our-teams/attorney_six.png";
+import attorney_seven from "/images/our-teams/attorney_seven.png";
+import attorney_eight from "/images/our-teams/attorney_eight.png";
+import attorney_nine from "/images/our-teams/attorney_nine.png";
+import attorney_ten from "/images/our-teams/attorney_ten.png";
+import attorney_eleven from "/images/our-teams/attorney_eleven.png";
+import attorney_twelve from "/images/our-teams/attorney_twelve.png";
 
 const AttorneysTeam = () => {
   return (
