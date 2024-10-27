@@ -128,8 +128,8 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
                     index === 0
                       ? BsTwitterX
                       : index === 1
-                      ? BsLinkedin
-                      : FaFacebook;
+                        ? BsLinkedin
+                        : FaFacebook;
                   return (
                     <Link
                       key={index}
@@ -143,9 +143,6 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
                   );
                 })}
               </div>
-              <button className="mt-4 px-5 py-2 bg-secondary text-white rounded-lg hover:bg-opacity-80 transition-all">
-                {user.user.designation}
-              </button>
             </div>
           </div>
         </div>
