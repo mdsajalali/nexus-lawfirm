@@ -7,6 +7,7 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { IoStar } from "react-icons/io5";
+import {motion} from "framer-motion"
 
 const Clients = () => {
   return (
@@ -17,9 +18,12 @@ const Clients = () => {
         className="w-full lg:h-[650px] h-[460px] object-cover"
       />
       <div className="absolute right-0 py-10 lg:py-[100px] top-0 w-full text-white">
-        <h1 className="md:text-2xl text-[20px] lg:text-[40px] font-semibold text-center">
+        <motion.h1 initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }} className="md:text-2xl text-[20px] lg:text-[40px] font-semibold text-center">
           What Our Clients Say
-        </h1>
+        </motion.h1>
         <section className="md:py-[60px] py-10 xl:px-0   px-4">
           <div>
             <Swiper

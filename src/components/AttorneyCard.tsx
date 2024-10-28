@@ -1,6 +1,8 @@
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
+
 
 interface TAttorneyCard {
   name: string;
@@ -10,7 +12,11 @@ interface TAttorneyCard {
 }
 
 const AttorneyCard = ({ name, title, image, id }: TAttorneyCard) => (
-  <Link to={`/attorneys/${id}`} className="relative group">
+ <motion.div  initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: id * 0.2 }}
+              viewport={{ once: true }}> 
+ <Link to={`/attorneys/${id}`} className="relative group">
     <div className="absolute hidden group-hover:block right-2 top-2 transition-opacity duration-300 ease-in-out">
       <div className="bg-secondary rounded-full md:w-8 size-6 p-[6px] md:p-0 md:h-8 flex items-center justify-center">
         <BsTwitterX />
@@ -34,6 +40,7 @@ const AttorneyCard = ({ name, title, image, id }: TAttorneyCard) => (
       </div>
     </div>
   </Link>
+  </motion.div>
 );
 
 export default AttorneyCard;
