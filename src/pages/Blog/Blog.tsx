@@ -66,7 +66,7 @@ const BlogComponent = () => {
     <>
       <SharedNavbar
         banner={banner}
-        title="Understanding Employment Law Rights"
+        title="Employment Law Rights"
         bread_text="Blogs"
         bread_link="blogs"
       />
