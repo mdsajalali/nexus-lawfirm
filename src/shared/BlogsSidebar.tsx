@@ -22,7 +22,9 @@ const BlogsSidebar = () => {
   return (
     <>
       {/* Blog Search */}
-      <BlogsSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+     <div className="hidden lg:block">
+       <BlogsSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+     </div>
       {/* Recent Blogs */}
       <div className="pt-10 pb-[100px]">
         <h1 className="text-2xl font-semibold">Recent Blogs</h1>
