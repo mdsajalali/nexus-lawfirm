@@ -9,6 +9,7 @@ import TopNav from "../components/TopNav";
 import navLinks from "../data/navItems";
 import ScheduleConsultationModal from "../components/ScheduleConsultationModal";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { motion } from "framer-motion";
 
 interface NavbarProps {
   banner: string;
@@ -116,9 +117,15 @@ const SharedNavbar = ({
               <FiMenu size={30} />
             </div>
           </nav>
-          <h1 className="py-10 font-opensans text-2xl font-bold md:py-20 md:text-[64px]">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="py-10 font-opensans text-2xl font-bold md:py-20 md:text-[64px]"
+          >
             {title}
-          </h1>
+          </motion.h1>
           {/* Breadcrumbs */}
           <Breadcrumbs bread_text={bread_text} bread_link={bread_link} />
         </Container>

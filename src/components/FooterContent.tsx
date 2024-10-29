@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../shared/Container";
 
 const FooterContent = () => {
@@ -14,7 +15,8 @@ const FooterContent = () => {
           </div>
           <div>
             <p className="text-[10px] md:text-[12px]">
-              © {currentYear} Nexus Law Firm. All rights reserved.
+              © {currentYear} <Link to="/" className="hover:underline">Nexus Law Firm</Link>. All rights
+              reserved.
             </p>
           </div>
         </div>

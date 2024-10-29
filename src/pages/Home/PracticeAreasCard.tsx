@@ -7,19 +7,32 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import {motion} from "framer-motion"
 
 const PracticeAreasCard = () => {
   return (
     <div className="grid grid-cols-1 gap-10  px-4 pt-10 md:pt-20 lg:grid-cols-2 xl:px-0">
       <div className="mx-auto max-w-[519px]">
-        <h1 className="text-center font-opensans text-2xl font-semibold md:text-start md:text-[40px]">
+        <motion.h1
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center font-opensans text-2xl font-semibold md:text-start md:text-[40px]"
+        >
           Practice Areas
-        </h1>
-        <p className="pt-3 text-center font-opensans text-[16px] leading-[20px] md:py-10 md:text-start md:text-[20px] md:leading-[30px]">
+        </motion.h1>
+        <motion.p
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="pt-3 text-center font-opensans text-[16px] leading-[20px] md:py-10 md:text-start md:text-[20px] md:leading-[30px]"
+        >
           Our experienced attorneys specialize in a diverse range of legal
           fields, ensuring that no matter your legal needs, you receive expert
           guidance and effective solutions.
-        </p>
+        </motion.p>
       </div>
       <div>
         <Swiper

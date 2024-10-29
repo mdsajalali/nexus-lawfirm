@@ -5,6 +5,8 @@ import multiple_user from "/images/client-satisfaction/multiple_user.svg";
 import book from "/images/client-satisfaction/book.svg";
 import verify from "/images/client-satisfaction/verify.svg";
 import Container from "../../shared/Container";
+import { motion } from "framer-motion";
+
 
 interface CountNumbers {
   years: number;
@@ -96,7 +98,11 @@ const ClientSatisfactionRate = () => {
         <Container>
           <div className="grid grid-cols-2 gap-7 text-center md:grid-cols-3 lg:grid-cols-4 lg:gap-[137px]">
             <div>
-              <img
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="mx-auto h-[31px] w-[30px] md:h-[42px] md:w-[41px]"
                 src={verify}
                 alt="verify"
@@ -104,12 +110,22 @@ const ClientSatisfactionRate = () => {
               <h1 className="text-[32px] font-bold md:text-[48px]">
                 {countNumbers.years}
               </h1>
-              <p className="font-opensans text-[13px] md:text-[16px]">
+              <motion.p
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="font-opensans text-[13px] md:text-[16px]"
+              >
                 Years of Legal Expertise
-              </p>
+              </motion.p>
             </div>
             <div>
-              <img
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="mx-auto h-[31px] w-[30px] md:h-[42px] md:w-[41px]"
                 src={multiple_user}
                 alt="multiple user"
@@ -117,12 +133,22 @@ const ClientSatisfactionRate = () => {
               <h1 className="text-[32px] font-bold md:text-[48px]">
                 {countNumbers.satisfactionRate}%
               </h1>
-              <p className="font-opensans text-[13px] md:text-[16px]">
+              <motion.p
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="font-opensans text-[13px] md:text-[16px]"
+              >
                 Client Satisfaction Rate
-              </p>
+              </motion.p>
             </div>
             <div>
-              <img
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="mx-auto h-[31px] w-[30px] md:h-[42px] md:w-[41px]"
                 src={book}
                 alt="book"
@@ -130,12 +156,22 @@ const ClientSatisfactionRate = () => {
               <h1 className="text-[32px] font-bold md:text-[48px]">
                 {countNumbers.casesResolved}+
               </h1>
-              <p className="font-opensans text-[13px] md:text-[16px]">
+              <motion.p
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="font-opensans text-[13px] md:text-[16px]"
+              >
                 Cases Successfully Resolved
-              </p>
+              </motion.p>
             </div>
             <div>
-              <img
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
                 className="mx-auto h-[31px] w-[30px] md:h-[42px] md:w-[41px]"
                 src={user}
                 alt="user"
@@ -143,9 +179,15 @@ const ClientSatisfactionRate = () => {
               <h1 className="text-[32px] font-bold md:text-[48px]">
                 {countNumbers.attorneys}+
               </h1>
-              <p className="font-opensans text-[13px] md:text-[16px]">
+              <motion.p
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="font-opensans text-[13px] md:text-[16px]"
+              >
                 Professional Attorneys
-              </p>
+              </motion.p>
             </div>
           </div>
         </Container>

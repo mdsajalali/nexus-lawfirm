@@ -1,5 +1,6 @@
 import { PiGreaterThan } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface breadcrumbsProps {
   bread_text: string;
@@ -8,7 +9,13 @@ interface breadcrumbsProps {
 
 const Breadcrumbs = ({ bread_text, bread_link }: breadcrumbsProps) => {
   return (
-    <div className="flex items-center gap-1  font-opensans">
+    <motion.div
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="flex items-center gap-1  font-opensans"
+    >
       <Link to="/" className="text-[14px]">
         Home
       </Link>
@@ -16,7 +23,7 @@ const Breadcrumbs = ({ bread_text, bread_link }: breadcrumbsProps) => {
       <Link to={`/${bread_link}`} className="text-[14px] capitalize">
         {bread_text}
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
