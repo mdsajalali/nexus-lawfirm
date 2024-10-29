@@ -17,9 +17,9 @@ const BlogsPagination = ({
   return (
     <div className="flex items-center justify-center gap-[6px]">
       <button
-        className={`flex items-center gap-1 border rounded-md py-1 px-2 text-[14px] transition-all ${
+        className={`flex items-center gap-1 rounded-md border px-2 py-1 text-[14px] transition-all ${
           isBackDisabled
-            ? "opacity-50 cursor-not-allowed"
+            ? "cursor-not-allowed opacity-50"
             : "hover:bg-primary hover:text-white"
         }`}
         onClick={() => onPageChange(activePage - 1)}
@@ -31,7 +31,7 @@ const BlogsPagination = ({
       {Array.from({ length: totalPages }, (_, index) => (
         <button
           key={index + 1}
-          className={`border rounded-md py-1 px-3 text-[14px] transition-all ${
+          className={`rounded-md border px-3 py-1 text-[14px] transition-all ${
             activePage === index + 1
               ? "bg-primary text-white"
               : "hover:bg-primary hover:text-white"
@@ -43,9 +43,9 @@ const BlogsPagination = ({
       ))}
 
       <button
-        className={`flex items-center gap-1 border rounded-md py-1 px-2 text-[14px] transition-all ${
+        className={`flex items-center gap-1 rounded-md border px-2 py-1 text-[14px] transition-all ${
           isNextDisabled
-            ? "opacity-50 cursor-not-allowed"
+            ? "cursor-not-allowed opacity-50"
             : "hover:bg-primary hover:text-white"
         }`}
         onClick={() => onPageChange(activePage + 1)}

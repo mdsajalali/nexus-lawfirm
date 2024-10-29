@@ -33,54 +33,54 @@ const ScheduleConsultationModal = ({
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black/60 z-[9999]"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60"
       onClick={handleOverlayClick}
     >
-      <div className="bg-primary rounded-md p-5 md:p-[50px] max-w-[560px] relative">
+      <div className="relative max-w-[560px] rounded-md bg-primary p-5 md:p-[50px]">
         <button
           onClick={onClose}
-          className="absolute top-2   right-4 text-white text-[20px] md:text-2xl"
+          className="absolute right-4   top-2 text-[20px] text-white md:text-2xl"
         >
           <IoMdClose />
         </button>
-        <h1 className="text-2xl md:text-[40px] font-semibold md:pb-10 pb-5">
+        <h1 className="pb-5 text-2xl font-semibold md:pb-10 md:text-[40px]">
           Get in Touch with Us
         </h1>
         <form>
-          <div className="flex flex-col md:flex-row gap-[10px] md:gap-4 mb-4">
+          <div className="mb-4 flex flex-col gap-[10px] md:flex-row md:gap-4">
             <input
               type="text"
               placeholder="Enter your full name"
-              className="border rounded p-3 w-full font-opensans outline-none text-[12px] md:text-[14px] text-black"
+              className="w-full rounded border p-3 font-opensans text-[12px] text-black outline-none md:text-[14px]"
               required
             />
             <input
               type="email"
               placeholder="Enter your email address"
-              className="border rounded p-3 w-full font-opensans outline-none text-[12px] mt-1 md:mt-0 md:text-[14px] text-black"
+              className="mt-1 w-full rounded border p-3 font-opensans text-[12px] text-black outline-none md:mt-0 md:text-[14px]"
               required
             />
           </div>
 
-          <div className="flex flex-col mb-4">
+          <div className="mb-4 flex flex-col">
             <input
               type="text"
               placeholder="Enter the subject of your message"
-              className="border rounded p-3 font-opensans outline-none text-[12px] md:text-[14px] text-black"
+              className="rounded border p-3 font-opensans text-[12px] text-black outline-none md:text-[14px]"
               required
             />
           </div>
-          <div className="flex flex-col mb-4">
+          <div className="mb-4 flex flex-col">
             <textarea
               placeholder="Type your message here"
-              className="border rounded p-3 font-opensans outline-none text-[12px] md:text-[14px] text-black"
+              className="rounded border p-3 font-opensans text-[12px] text-black outline-none md:text-[14px]"
               required
               rows={4}
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-white rounded border text-black transition-all hover:bg-primary py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans"
+            className="rounded border bg-white px-16 py-[14px] font-opensans text-[14px] font-semibold text-black transition-all hover:bg-primary hover:text-white md:px-7 md:text-[18px]"
           >
             Request consultation
           </button>

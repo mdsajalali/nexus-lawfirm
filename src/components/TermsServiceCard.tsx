@@ -1,4 +1,5 @@
 import Container from "../shared/Container";
+import { motion } from "framer-motion";
 
 const termsData = [
   {
@@ -36,23 +37,35 @@ const termsData = [
 const TermsServiceCard = () => {
   return (
     <Container>
-      <div className="py-10 md:py-20 font-opensans">
+      <div className="py-10 font-opensans md:py-20">
         {termsData.map((term, index) => (
-          <div key={index} className="my-4 md:my-7">
-            <h1 className="text-[20px] md:text-2xl font-semibold">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            key={index}
+            className="my-4 md:my-7"
+          >
+            <h1 className="text-[20px] font-semibold md:text-2xl">
               {term.title}
             </h1>
-            <p className="pt-3 md:pt-5 text-[14px] md:text-[16px] md:leading-6 leading-5">
+            <p className="pt-3 text-[14px] leading-5 md:pt-5 md:text-[16px] md:leading-6">
               {term.content}
             </p>
-          </div>
+          </motion.div>
         ))}
 
-        <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             7. Contact Us
           </h1>
-          <ul className=" pl-5 pt-5 text-[14px] md:text-[16px] md:leading-6 leading-5">
+          <ul className=" pl-5 pt-5 text-[14px] leading-5 md:text-[16px] md:leading-6">
             <li className="list-disc text-[14] md:text-[16px]">
               Email: contact@nexuslawfirm.com
             </li>
@@ -63,7 +76,7 @@ const TermsServiceCard = () => {
               Address: 456 Elm Street, Suite 789, Metropolis, NY 10001
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </Container>
   );

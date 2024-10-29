@@ -5,15 +5,15 @@ interface BlogsSearchProps {
 }
 const BlogsSearch = ({ searchQuery, setSearchQuery }: BlogsSearchProps) => {
   return (
-    <div className="border flex items-center justify-between rounded-md px-4 py-[10px] bg-white">
+    <div className="flex items-center justify-between rounded-md border bg-white px-4 py-[10px]">
       <input
         type="text"
         placeholder="Search by title"
-        className="text-[#D0D4D6] text-[14px] outline-none w-full"
+        className="w-full text-[14px] text-[#D0D4D6] outline-none"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
-      <CiSearch size={20} className="text-[#3D4C56] cursor-pointer" />
+      <CiSearch size={20} className="cursor-pointer text-[#3D4C56]" />
     </div>
   );
 };

@@ -42,13 +42,13 @@ const Companies = () => {
         >
           {companies.map((item) => (
             <SwiperSlide
-              className="flex justify-center items-center "
+              className="flex items-center justify-center "
               key={item.alt}
             >
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-[110px] md:w-[201px] h-5 md:h-[46px] object-contain"
+                className="h-5 w-[110px] object-contain md:h-[46px] md:w-[201px]"
               />
             </SwiperSlide>
           ))}

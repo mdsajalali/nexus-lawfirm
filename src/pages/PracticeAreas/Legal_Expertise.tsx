@@ -8,42 +8,60 @@ import immigration_law from "/images/practice-area/immigration_law.svg";
 import personal_injury from "/images/practice-area/personal_injury.svg";
 import real_estate_law from "/images/practice-area/real_estate_law.svg";
 import Container from "../../shared/Container";
+import { motion } from "framer-motion";
+
 const Legal_Expertise = () => {
   return (
     <Container>
       {/* Sidebar icons */}
-      <div className="xl:block hidden">
+      <div className="hidden xl:block">
         <HeroSidebar />
       </div>
       <div className="py-10 md:py-20">
-        <div className="text-center max-w-[804px] mx-auto">
-          <h1 className="text-2xl md:text-[40px] font-semibold">
+        <div className="mx-auto max-w-[804px] text-center">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold md:text-[40px]"
+          >
             Our Legal Expertise
-          </h1>
-          <p className="text-[16px] md:text-[20px] leading-[30px] font-opensans my-5">
+          </motion.h1>
+          <motion.p
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="my-5 font-opensans text-[16px] leading-[30px] md:text-[20px]"
+          >
             Explore the diverse areas of law in which we provide dedicated,
             expert representation. We offer personalized solutions for each of
             our clients' unique needs.
-          </p>
+          </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6  mt-10">
+        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3  xl:grid-cols-4">
           {legalExpertisData?.map((data) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: data.id * 0.2 }}
+              viewport={{ once: true }}
               key={data.id}
-              className="bg-white max-w-[424px] rounded-md  text-center hover:bg-primary hover:text-white transition-all hover:scale-95  border border-[#D0D4D6] pt-10 pb-5 px-5 duration-300  font-opensans"
+              className="max-w-[424px] rounded-md border  border-[#D0D4D6] bg-white px-5 pb-5 pt-10  text-center font-opensans transition-all duration-300 hover:scale-95 hover:bg-primary  hover:text-white"
             >
               <img
                 src={data?.img}
                 alt="img"
-                className="size-10 md:size-[56px] mx-auto"
+                className="mx-auto size-10 md:size-[56px]"
               />
-              <h1 className="pt-3 text-[20px] md:text-2xl font-semibold">
+              <h1 className="pt-3 text-[20px] font-semibold md:text-2xl">
                 {data?.title}
               </h1>
-              <p className="py-4 md:py-7 text-[14px] md:text-[16px] leading-5 md:leading-[24px]">
+              <p className="py-4 text-[14px] leading-5 md:py-7 md:text-[16px] md:leading-[24px]">
                 {data?.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

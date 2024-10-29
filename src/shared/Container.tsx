@@ -6,7 +6,7 @@ interface TContainer {
 
 const Container = ({ children }: TContainer) => {
   return (
-    <div className="max-w-[1320px] mx-auto xl:px-0   px-4">{children}</div>
+    <div className="mx-auto max-w-[1320px] px-4   xl:px-0">{children}</div>
   );
 };
 
