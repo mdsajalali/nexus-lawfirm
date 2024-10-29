@@ -52,7 +52,10 @@ const Footer = () => {
                 {["About", "Practice Areas", "Attorneys", "Contact"].map(
                   (link, index) => (
                     <li key={index}>
-                      <a className="font-opensans hover:underline text-sm text-white" href="#">
+                      <a
+                        className="font-opensans text-sm text-white hover:underline"
+                        href="#"
+                      >
                         {link}
                       </a>
                     </li>
@@ -77,9 +80,12 @@ const Footer = () => {
                   "Real Estate Law",
                 ].map((area, index) => (
                   <li key={index}>
-                    <a href="#" className="font-opensans hover:underline text-sm text-white">
+                    <Link
+                      to="/criminal-law"
+                      className="font-opensans text-sm text-white hover:underline"
+                    >
                       {area}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

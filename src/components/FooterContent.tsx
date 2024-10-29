@@ -8,15 +8,23 @@ const FooterContent = () => {
       <Container>
         <div className="items-center justify-between text-center md:flex md:text-start">
           <div className="items-center gap-20 md:flex">
-            <h1 className="text-[10px] md:text-[12px]">Terms of Service</h1>
-            <h2 className="py-2 text-[10px] md:py-0 md:text-[12px]">
+            <Link to="/terms" className="text-[10px] md:text-[12px] hover:underline">
+              Terms of Service
+            </Link>
+            <Link
+              to="/privacy-policy"
+              className="py-2 text-[10px] md:py-0 md:text-[12px] hover:underline"
+            >
               Privacy Policy
-            </h2>
+            </Link>
           </div>
           <div>
             <p className="text-[10px] md:text-[12px]">
-              © {currentYear} <Link to="/" className="hover:underline">Nexus Law Firm</Link>. All rights
-              reserved.
+              © {currentYear}{" "}
+              <Link to="/" className="hover:underline">
+                Nexus Law Firm
+              </Link>
+              . All rights reserved.
             </p>
           </div>
         </div>
