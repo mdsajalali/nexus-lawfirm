@@ -91,7 +91,7 @@ const AttorneysProfile = () => {
       {user ? (
         <AttorneysProfileCard users={[user]} />
       ) : (
-        <p className="text-center py-10 font-opensans">User not found</p>
+        <p className="py-10 text-center font-opensans">User not found</p>
       )}
       <ScheduleConsultation />
     </>

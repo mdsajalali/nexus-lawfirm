@@ -23,18 +23,18 @@ const BlogCategories: React.FC<BlogCategoriesProps> = ({
 
   return (
     <div>
-      <h1 className="font-semibold text-2xl">Categories</h1>
+      <h1 className="text-2xl font-semibold">Categories</h1>
       <div className="pt-5">
         {categories.map((category) => (
           <h1
             key={category}
-            className={`flex items-center py-[3px] text-[14px] cursor-pointer ${
+            className={`flex cursor-pointer items-center py-[3px] text-[14px] ${
               selectedCategory === category ? "text-secondary" : ""
             }`}
             onClick={() => setSelectedCategory(category)}
           >
             <MdOutlineNavigateNext size={22} className="text-secondary" />
-            <span className="hover:text-secondary transition-all duration-300">
+            <span className="transition-all duration-300 hover:text-secondary">
               {category}
             </span>
           </h1>

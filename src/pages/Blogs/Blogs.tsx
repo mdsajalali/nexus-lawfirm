@@ -44,8 +44,7 @@ const Blogs = () => {
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
-  const {   setSearchQuery,  } =
-    useBlogStore();
+  const { setSearchQuery } = useBlogStore();
 
   return (
     <>
@@ -55,19 +54,24 @@ const Blogs = () => {
         bread_text="Blogs"
         bread_link="blogs"
       />
-       
+
       <HeroSidebar />
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-10 font-opensans lg:py-[100px]">
+        <div className="grid grid-cols-1 gap-6 py-10 font-opensans lg:grid-cols-12 lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
-           <div className="flex items-center justify-between gap-2 flex-wrap">
-             <h1 className="text-2xl font-semibold md:text-[40px]">Our Blogs</h1>
-               {/* Blog Search */}
-            <div className="block lg:hidden">
-      <BlogsSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h1 className="text-2xl font-semibold md:text-[40px]">
+                Our Blogs
+              </h1>
+              {/* Blog Search */}
+              <div className="block lg:hidden">
+                <BlogsSearch
+                  searchQuery={searchQuery}
+                  setSearchQuery={setSearchQuery}
+                />
+              </div>
             </div>
-           </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 py-[50px]">
+            <div className="grid grid-cols-1 gap-6 py-[50px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
               {currentBlogs.length > 0 ? (
                 currentBlogs.map((blog: BlogProps, idx: number) => (
                   <BlogsCard key={idx} blog={blog} />

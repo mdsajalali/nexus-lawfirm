@@ -17,24 +17,26 @@ interface BlogsCardProps {
 
 const BlogsCard = ({ blog }: BlogsCardProps) => {
   return (
-    <div className="border rounded-lg">
+    <div className="rounded-lg border">
       <Link to={`/blog/${blog.id}`}>
-        <img src={blog.img} alt="Blog" className="w-full h-auto" />
+        <img src={blog.img} alt="Blog" className="h-auto w-full" />
       </Link>
-      <h3 className="pt-4 pb-2 px-3 text-sm md:text-base">{blog.category}</h3>
+      <h3 className="px-3 pb-2 pt-4 text-sm md:text-base">{blog.category}</h3>
       <Link to={`/blog/${blog.id}`}>
-        <h1 className="text-lg md:text-xl cursor-pointer px-3 font-semibold hover:text-secondary duration-300 transition-all">
+        <h1 className="cursor-pointer px-3 text-lg font-semibold transition-all duration-300 hover:text-secondary md:text-xl">
           {blog.title}
         </h1>
       </Link>
       <Link to={`/blog/${blog.id}`}>
-        <p className="py-2 text-base px-3 leading-6 line-clamp-2">{blog.desc}</p>
+        <p className="line-clamp-2 px-3 py-2 text-base leading-6">
+          {blog.desc}
+        </p>
       </Link>
-      <div className="flex px-3 items-center gap-2 pt-2 pb-4">
+      <div className="flex items-center gap-2 px-3 pb-4 pt-2">
         <img
           src={blog.user}
           alt="User"
-          className="w-6 object-cover h-6 rounded-full"
+          className="h-6 w-6 rounded-full object-cover"
         />
 
         <div className="text-xs md:text-sm">

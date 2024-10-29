@@ -4,26 +4,26 @@ import { FaFacebook } from "react-icons/fa6";
 const SocialContact = () => {
   return (
     <div className="pb-10 md:pb-[100px]">
-      <div className="flex items-center flex-wrap gap-2 justify-evenly">
+      <div className="flex flex-wrap items-center justify-evenly gap-2">
         <h1 className="text-2xl font-semibold md:text-[40px]">
           Connect with social media
         </h1>
         <div className="flex items-center gap-3">
           <BsTwitterX
             size={20}
-            className="hover:text-secondary transition-all cursor-pointer"
+            className="cursor-pointer transition-all hover:text-secondary"
           />
           <BsLinkedin
             size={20}
-            className="hover:text-secondary transition-all cursor-pointer"
+            className="cursor-pointer transition-all hover:text-secondary"
           />
           <FaFacebook
             size={20}
-            className="hover:text-secondary transition-all cursor-pointer"
+            className="cursor-pointer transition-all hover:text-secondary"
           />
           <BsInstagram
             size={20}
-            className="hover:text-secondary transition-all cursor-pointer"
+            className="cursor-pointer transition-all hover:text-secondary"
           />
         </div>
       </div>
@@ -33,7 +33,7 @@ const SocialContact = () => {
           style={{ border: 0 }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="  w-full h-[250px] md:h-[600px]"
+          className="  h-[250px] w-full md:h-[600px]"
         ></iframe>
       </div>
     </div>

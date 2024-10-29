@@ -9,25 +9,25 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="bg-primary pt-10 pb-8">
+      <div className="bg-primary pb-8 pt-10">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
             <div className="col-span-1 lg:col-span-3">
               <Link to="/">
                 <img src={logo} alt="Logo" className="-mt-3" />
               </Link>
               <div>
-                <h4 className="text-white mt-10 text-sm font-opensans">
+                <h4 className="mt-10 font-opensans text-sm text-white">
                   123 Legal St, Suite 400 New York, NY 10001
                 </h4>
-                <h3 className="text-white my-3 text-sm font-opensans">
+                <h3 className="my-3 font-opensans text-sm text-white">
                   Email: info@nexuslawfirm.com
                 </h3>
-                <p className="text-white text-sm font-opensans">
+                <p className="font-opensans text-sm text-white">
                   Phone: (123) 456-7890
                 </p>
               </div>
-              <div className="flex items-center py-6 gap-4">
+              <div className="flex items-center gap-4 py-6">
                 {[
                   <BsTwitterX />,
                   <BsLinkedin />,
@@ -36,7 +36,7 @@ const Footer = () => {
                 ].map((icon, index) => (
                   <div
                     key={index}
-                    className="bg-secondary transition-all cursor-pointer hover:bg-white w-8 h-8 flex items-center justify-center rounded-full"
+                    className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-secondary transition-all hover:bg-white"
                   >
                     {icon}
                   </div>
@@ -45,24 +45,24 @@ const Footer = () => {
             </div>
 
             <div className="col-span-1 lg:col-span-2">
-              <h1 className="text-lg font-semibold text-white font-opensans">
+              <h1 className="font-opensans text-lg font-semibold text-white">
                 Quick Links
               </h1>
               <ul className="pt-5">
                 {["About", "Practice Areas", "Attorneys", "Contact"].map(
                   (link, index) => (
                     <li key={index}>
-                      <a className="text-white text-sm font-opensans" href="#">
+                      <a className="font-opensans text-sm text-white" href="#">
                         {link}
                       </a>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </div>
 
             <div className="col-span-1 lg:col-span-2">
-              <h1 className="text-lg font-semibold text-white font-opensans">
+              <h1 className="font-opensans text-lg font-semibold text-white">
                 Practice Areas
               </h1>
               <ul className="pt-5">
@@ -77,7 +77,7 @@ const Footer = () => {
                   "Real Estate Law",
                 ].map((area, index) => (
                   <li key={index}>
-                    <a href="#" className="text-white font-opensans text-sm">
+                    <a href="#" className="font-opensans text-sm text-white">
                       {area}
                     </a>
                   </li>
@@ -86,23 +86,23 @@ const Footer = () => {
             </div>
 
             <div className="col-span-1 lg:col-span-2">
-              <h1 className="text-lg font-semibold text-white font-opensans">
+              <h1 className="font-opensans text-lg font-semibold text-white">
                 Office Hours
               </h1>
               <ul className="pt-5">
                 <li>
-                  <span className="text-white font-opensans text-sm">
+                  <span className="font-opensans text-sm text-white">
                     Monday - Friday:
                     <span className="italic">9:00 AM - 6:00 PM</span>
                   </span>
                 </li>
                 <li>
-                  <span className="text-white font-opensans text-sm">
+                  <span className="font-opensans text-sm text-white">
                     Saturday: <span className="italic">10:00 AM - 2:00 PM</span>
                   </span>
                 </li>
                 <li>
-                  <span className="text-white font-opensans text-sm">
+                  <span className="font-opensans text-sm text-white">
                     Sunday: <span className="italic">Closed</span>
                   </span>
                 </li>
@@ -110,21 +110,21 @@ const Footer = () => {
             </div>
 
             <div className="col-span-1 lg:col-span-3">
-              <h1 className="text-lg font-semibold text-white font-opensans">
+              <h1 className="font-opensans text-lg font-semibold text-white">
                 Subscribe to Our Newsletter
               </h1>
-              <p className="text-white mt-5 font-opensans">
+              <p className="mt-5 font-opensans text-white">
                 Get Legal Updates and Insights
               </p>
-              <div className="relative md:w-1/3 lg:w-full w-full pt-4">
+              <div className="relative w-full pt-4 md:w-1/3 lg:w-full">
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="p-2 rounded-md border outline-none text-sm font-opensans w-full"
+                  className="w-full rounded-md border p-2 font-opensans text-sm outline-none"
                 />
                 <MdEmail
                   size={20}
-                  className="absolute cursor-pointer right-2 hidden md:block top-6 text-secondary"
+                  className="absolute right-2 top-6 hidden cursor-pointer text-secondary md:block"
                 />
               </div>
             </div>

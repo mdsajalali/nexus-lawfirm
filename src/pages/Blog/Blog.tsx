@@ -73,12 +73,12 @@ const BlogComponent = () => {
 
       <HeroSidebar />
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 py-20 font-opensans lg:py-[100px]">
+        <div className="grid grid-cols-1 gap-6 py-20 font-opensans lg:grid-cols-12 lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             {blog ? (
               <BlogCard blog={blog} />
             ) : (
-              <div className="font-opensans text-center py-5">Loading...</div>
+              <div className="py-5 text-center font-opensans">Loading...</div>
             )}
           </div>
           <div className="col-span-1 lg:col-span-4 xl:col-span-3">

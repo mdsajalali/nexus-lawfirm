@@ -22,11 +22,14 @@ const BlogsSidebar = () => {
   return (
     <>
       {/* Blog Search */}
-     <div className="hidden lg:block">
-       <BlogsSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-     </div>
+      <div className="hidden lg:block">
+        <BlogsSearch
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
+      </div>
       {/* Recent Blogs */}
-      <div className="pt-10 pb-[100px]">
+      <div className="pb-[100px] pt-10">
         <h1 className="text-2xl font-semibold">Recent Blogs</h1>
         {recentBlogs.map((blog: BlogProps) => (
           <RecentBlogs key={blog.id} blog={blog} />

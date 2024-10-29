@@ -40,7 +40,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
     <Container>
       {/* Sidebar */}
       <HeroSidebar />
-      <div className="py-10 md:py-20 font-opensans grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[100px]">
+      <div className="grid grid-cols-1 gap-10 py-10 font-opensans md:py-20 lg:grid-cols-12 lg:gap-[100px]">
         <div className="  col-span-1 lg:col-span-7">
           <div>
             <h1 className="text-2xl font-bold">About</h1>
@@ -49,7 +49,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
 
           <div>
-            <h1 className="text-xl font-semibold mt-5 lg:mt-5">
+            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
               Practice Areas
             </h1>
             {user.practice_areas.map((area, idx) => (
@@ -61,7 +61,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
 
           <div>
-            <h1 className="text-xl font-semibold mt-5 lg:mt-5">
+            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
               Experience and Achievements
             </h1>
             {user.experience_and_achievements.map((achievement, idx) => (
@@ -73,7 +73,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
 
           <div>
-            <h1 className="text-xl font-semibold mt-5 lg:mt-5">
+            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
               Education Milestones
             </h1>
             {user.education_milestones.map((milestone, idx) => (
@@ -87,7 +87,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
 
           <div>
-            <h1 className="text-xl font-semibold mt-5 lg:mt-5">
+            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
               Professional Affiliations
             </h1>
             {user.professional_affiliations.map((affiliation, idx) => (
@@ -99,7 +99,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
 
           <div>
-            <h1 className="text-xl font-semibold mt-5 lg:mt-5">
+            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
               Awards and Honors
             </h1>
             {user.awards_and_honors.map((award, idx) => (
@@ -111,18 +111,18 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
           </div>
         </div>
 
-        <div className="flex col-span-1 lg:col-span-5 relative text-white flex-col items-center text-center">
+        <div className="relative col-span-1 flex flex-col items-center text-center text-white lg:col-span-5">
           <img
             src={user.user.img}
             alt="Profile"
-            className="mb-4 rounded-lg lg:w-[536px] w-full h-[650px] lg:h-[760px] object-cover"
+            className="mb-4 h-[650px] w-full rounded-lg object-cover lg:h-[760px] lg:w-[536px]"
           />
-          <div className="absolute px-5 md:px-20   bottom-10 bg-black/50 py-5   flex flex-col items-center justify-center">
+          <div className="absolute bottom-10 flex   flex-col items-center justify-center   bg-black/50 px-5 py-5 md:px-20">
             <h1 className="text-2xl font-bold">{user.user.name}</h1>
             <h2 className="text-xl text-gray-300">{user.user.designation}</h2>
             <p className="mt-2 text-gray-400">{user.user.overview}</p>
             <div className="mt-4">
-              <div className="flex items-center gap-3 justify-center">
+              <div className="flex items-center justify-center gap-3">
                 {user.user.social_links.map((link, index) => {
                   const Icon =
                     index === 0
@@ -136,7 +136,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
                       to={link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-secondary transition-all"
+                      className="transition-all hover:text-secondary"
                     >
                       <Icon size={20} />
                     </Link>

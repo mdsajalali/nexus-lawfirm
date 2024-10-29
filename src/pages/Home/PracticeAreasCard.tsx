@@ -10,12 +10,12 @@ import "swiper/css/pagination";
 
 const PracticeAreasCard = () => {
   return (
-    <div className="pt-10 md:pt-20 xl:px-0  px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div className="max-w-[519px] mx-auto">
-        <h1 className="text-2xl md:text-[40px] text-center md:text-start font-semibold font-opensans">
+    <div className="grid grid-cols-1 gap-10  px-4 pt-10 md:pt-20 lg:grid-cols-2 xl:px-0">
+      <div className="mx-auto max-w-[519px]">
+        <h1 className="text-center font-opensans text-2xl font-semibold md:text-start md:text-[40px]">
           Practice Areas
         </h1>
-        <p className="text-[16px] md:text-[20px] leading-[20px] md:leading-[30px] pt-3 md:py-10 text-center md:text-start font-opensans">
+        <p className="pt-3 text-center font-opensans text-[16px] leading-[20px] md:py-10 md:text-start md:text-[20px] md:leading-[30px]">
           Our experienced attorneys specialize in a diverse range of legal
           fields, ensuring that no matter your legal needs, you receive expert
           guidance and effective solutions.
@@ -48,17 +48,19 @@ const PracticeAreasCard = () => {
           {practiceAreaData?.map((data) => (
             <SwiperSlide
               key={data.id}
-              className="bg-primary max-w-[424px] rounded-md md:h-[380px] text-center text-white   md:py-[55px] md:px-[73px] p-10 font-opensans"
+              className="max-w-[424px] rounded-md bg-primary p-10 text-center font-opensans   text-white md:h-[380px] md:px-[73px] md:py-[55px]"
             >
               <img
                 src={data?.img}
                 alt="img"
-                className="w-[56px] h-[56px] object-cover mx-auto"
+                className="mx-auto h-[56px] w-[56px] object-cover"
               />
               <h1 className="pt-3 text-2xl font-semibold">{data?.title}</h1>
-              <p className="py-7 font-[16px] h-40 md:h-auto leading-[24px]">{data?.desc}</p>
+              <p className="h-40 py-7 font-[16px] leading-[24px] md:h-auto">
+                {data?.desc}
+              </p>
               <div className="flex items-center justify-center">
-                <button className="flex text-[18px] hover:text-secondary transition-all items-center gap-2">
+                <button className="flex items-center gap-2 text-[18px] transition-all hover:text-secondary">
                   Read more <FaArrowRightLong size={15} />
                 </button>
               </div>

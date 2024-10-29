@@ -18,21 +18,21 @@ const AttorneysTeam = () => {
   return (
     <Container>
       {/* Sidebar icons */}
-      <div className="xl:block hidden">
+      <div className="hidden xl:block">
         <HeroSidebar />
       </div>
       <div className="py-10 md:py-20">
-        <div className="text-center max-w-[804px] mx-auto">
-          <h1 className="text-2xl md:text-[40px] font-semibold">
+        <div className="mx-auto max-w-[804px] text-center">
+          <h1 className="text-2xl font-semibold md:text-[40px]">
             Meet Our Legal Experts
           </h1>
-          <p className="text-[16px] md:text-[20px] leading-5 md:leading-[30px] font-opensans my-3 md:my-5">
+          <p className="my-3 font-opensans text-[16px] leading-5 md:my-5 md:text-[20px] md:leading-[30px]">
             Our team of highly skilled attorneys is dedicated to providing
             exceptional legal services across various practice areas. Get to
             know the professionals who will be handling your case.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 pt-4 md:pt-8 ">
+        <div className="grid grid-cols-2 gap-3 pt-4 md:grid-cols-3 md:gap-6 md:pt-8 lg:grid-cols-4 ">
           {attorneys?.map((attorney) => (
             <AttorneyCard key={attorney.id} {...attorney} />
           ))}

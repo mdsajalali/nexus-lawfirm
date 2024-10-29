@@ -13,17 +13,17 @@ interface RecentBlogsProps {
 const RecentBlogs = ({ blog }: RecentBlogsProps) => {
   return (
     <div>
-      <div key={blog.id} className="flex pt-5 items-center gap-6 ">
+      <div key={blog.id} className="flex items-center gap-6 pt-5 ">
         <Link to={`/blog/${blog.id}`}>
           <img
             src={blog.img}
             alt="img"
-            className="w-[150px] h-[88px] object-content"
+            className="object-content h-[88px] w-[150px]"
           />
         </Link>
         <div>
           <Link to={`/blog/${blog.id}`}>
-            <h1 className="text-[16px] hover:text-secondary transition-all duration-300 cursor-pointer font-semibold">
+            <h1 className="cursor-pointer text-[16px] font-semibold transition-all duration-300 hover:text-secondary">
               {blog.title}
             </h1>
           </Link>

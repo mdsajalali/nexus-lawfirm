@@ -36,23 +36,23 @@ const termsData = [
 const TermsServiceCard = () => {
   return (
     <Container>
-      <div className="py-10 md:py-20 font-opensans">
+      <div className="py-10 font-opensans md:py-20">
         {termsData.map((term, index) => (
           <div key={index} className="my-4 md:my-7">
-            <h1 className="text-[20px] md:text-2xl font-semibold">
+            <h1 className="text-[20px] font-semibold md:text-2xl">
               {term.title}
             </h1>
-            <p className="pt-3 md:pt-5 text-[14px] md:text-[16px] md:leading-6 leading-5">
+            <p className="pt-3 text-[14px] leading-5 md:pt-5 md:text-[16px] md:leading-6">
               {term.content}
             </p>
           </div>
         ))}
 
         <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             7. Contact Us
           </h1>
-          <ul className=" pl-5 pt-5 text-[14px] md:text-[16px] md:leading-6 leading-5">
+          <ul className=" pl-5 pt-5 text-[14px] leading-5 md:text-[16px] md:leading-6">
             <li className="list-disc text-[14] md:text-[16px]">
               Email: contact@nexuslawfirm.com
             </li>

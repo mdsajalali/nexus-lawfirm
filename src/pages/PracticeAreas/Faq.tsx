@@ -45,17 +45,17 @@ const Faq = () => {
 
   return (
     <Container>
-      <div className="pb-20 md:pb-[100px] grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 gap-5 pb-20 md:pb-[100px] lg:grid-cols-2">
         <div className="max-w-[521px]">
-          <h1 className="text-2xl md:text-[40px] font-semibold">
+          <h1 className="text-2xl font-semibold md:text-[40px]">
             Do You Have Any Questions?
           </h1>
-          <p className="text-[16px] md:text-[18px] font-opensans leading-[20px] md:leading-[24px] mt-3">
+          <p className="mt-3 font-opensans text-[16px] leading-[20px] md:text-[18px] md:leading-[24px]">
             Find answers to some of the most common questions about our legal
             services and how we can help you.
           </p>
           <Link to="/contact">
-            <button className="bg-transparent rounded border mt-5 md:mt-7 border-[#162834] text-black transition-all hover:bg-[#162834] py-[14px] px-16 md:px-7 hover:text-white text-[14px] md:text-[18px] font-semibold font-opensans">
+            <button className="mt-5 rounded border border-[#162834] bg-transparent px-16 py-[14px] font-opensans text-[14px] font-semibold text-black transition-all hover:bg-[#162834] hover:text-white md:mt-7 md:px-7 md:text-[18px]">
               Contact Us
             </button>
           </Link>
@@ -64,14 +64,14 @@ const Faq = () => {
           {faqData?.map((faq, index) => (
             <div key={index}>
               <div
-                className={`flex items-center justify-between p-3 my-3 rounded-md cursor-pointer transition-all duration-300 ${
+                className={`my-3 flex cursor-pointer items-center justify-between rounded-md p-3 transition-all duration-300 ${
                   activeIndex === index
                     ? "bg-primary text-white"
                     : "border border-[#8A9399]"
                 }`}
                 onClick={() => toggleFAQ(index)}
               >
-                <h1 className="font-opensans md:text-[16px] text-[14px] font-semibold">
+                <h1 className="font-opensans text-[14px] font-semibold md:text-[16px]">
                   {faq.question}
                 </h1>
                 <IoIosArrowUp
@@ -81,7 +81,7 @@ const Faq = () => {
                 />
               </div>
               {activeIndex === index && (
-                <p className="text-[13px] md:text-[14px] py-2 px-3 font-opensans">
+                <p className="px-3 py-2 font-opensans text-[13px] md:text-[14px]">
                   {faq.answer}
                 </p>
               )}

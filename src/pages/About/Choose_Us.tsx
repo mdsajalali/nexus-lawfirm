@@ -9,22 +9,22 @@ const Choose_Us = () => {
     <Container>
       <div className="  py-20 md:py-20">
         <div>
-          <h1 className="text-center text-2xl md:text-[40px] font-semibold">
+          <h1 className="text-center text-2xl font-semibold md:text-[40px]">
             Why clients choose us?
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-8 md:pt-16 gap-6">
+        <div className="grid grid-cols-1 gap-6 pt-8 md:grid-cols-2 md:pt-16 lg:grid-cols-3 xl:grid-cols-4">
           {chooseUsData?.map((data) => (
             <div
-              className="max-w-[312px] flex flex-col items-center justify-center mx-auto hover:scale-90 transition-all shadow-md rounded-md py-14 md:py-[63px] px-[25px] text-center"
+              className="mx-auto flex max-w-[312px] flex-col items-center justify-center rounded-md px-[25px] py-14 text-center shadow-md transition-all hover:scale-90 md:py-[63px]"
               key={data?.id}
             >
               <img
                 src={data?.img}
                 alt="img"
-                className="object-content size-10 md:size-[64px]  mx-auto"
+                className="object-content mx-auto size-10  md:size-[64px]"
               />
-              <h1 className="py-4 text-[20px] md:text-2xl font-semibold font-opensans">
+              <h1 className="py-4 font-opensans text-[20px] font-semibold md:text-2xl">
                 {data?.title}
               </h1>
               <p className="font-opensans text-[14px] md:text-[16px]">

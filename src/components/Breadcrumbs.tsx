@@ -8,7 +8,7 @@ interface breadcrumbsProps {
 
 const Breadcrumbs = ({ bread_text, bread_link }: breadcrumbsProps) => {
   return (
-    <div className="flex font-opensans items-center  gap-1">
+    <div className="flex items-center gap-1  font-opensans">
       <Link to="/" className="text-[14px]">
         Home
       </Link>

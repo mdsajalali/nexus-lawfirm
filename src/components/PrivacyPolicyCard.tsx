@@ -3,9 +3,11 @@ import Container from "../shared/Container";
 const PrivacyPolicyCard = () => {
   return (
     <Container>
-      <div className="py-10 md:py-20 font-opensans">
+      <div className="py-10 font-opensans md:py-20">
         <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">1. Information We Collect</h1>
+          <h1 className="text-[20px] font-semibold md:text-2xl">
+            1. Information We Collect
+          </h1>
           <div className="py-5">
             <p className="text-[14] md:text-[16px]">
               We may collect the following types of information:
@@ -25,11 +27,13 @@ const PrivacyPolicyCard = () => {
           </div>
         </div>
         <div className="my-5">
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             2. How We Use Your Information
           </h1>
           <div className="py-5">
-            <p className="text-[14] md:text-[16px]">We use your information to:</p>
+            <p className="text-[14] md:text-[16px]">
+              We use your information to:
+            </p>
             <ul className="list-disc pl-8">
               <li>Provide legal services and respond to your inquiries.</li>
               <li>Improve our website and services.</li>
@@ -43,7 +47,7 @@ const PrivacyPolicyCard = () => {
         </div>
 
         <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             3. Sharing Your Information
           </h1>
           <div className="py-5">
@@ -64,7 +68,7 @@ const PrivacyPolicyCard = () => {
         </div>
 
         <div className="my-5">
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             5. Cookies and Tracking Technologies
           </h1>
           <div className="py-5">
@@ -77,7 +81,9 @@ const PrivacyPolicyCard = () => {
         </div>
 
         <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">6. Your Rights</h1>
+          <h1 className="text-[20px] font-semibold md:text-2xl">
+            6. Your Rights
+          </h1>
           <div className="py-5">
             <p className="text-[14] md:text-[16px]">You have the right to:</p>
             <ul className="list-disc pl-8">
@@ -92,7 +98,9 @@ const PrivacyPolicyCard = () => {
         </div>
 
         <div className="my-5">
-          <h1 className="text-[20px] md:text-2xl font-semibold">7. Changes to This Policy</h1>
+          <h1 className="text-[20px] font-semibold md:text-2xl">
+            7. Changes to This Policy
+          </h1>
           <div className="py-5">
             <p className="text-[14] md:text-[16px]">
               We may update this Privacy Policy periodically. Any changes will
@@ -102,10 +110,10 @@ const PrivacyPolicyCard = () => {
         </div>
 
         <div>
-          <h1 className="text-[20px] md:text-2xl font-semibold">
+          <h1 className="text-[20px] font-semibold md:text-2xl">
             8. Contact Us
           </h1>
-          <ul className=" pl-8 pt-5 text-[14px] md:text-[16px] md:leading-6 leading-5">
+          <ul className=" pl-8 pt-5 text-[14px] leading-5 md:text-[16px] md:leading-6">
             <li className="list-disc text-[14] md:text-[16px]">
               Email: contact@nexuslawfirm.com
             </li>

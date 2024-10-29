@@ -7,7 +7,7 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { IoStar } from "react-icons/io5";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const Clients = () => {
   return (
@@ -15,16 +15,19 @@ const Clients = () => {
       <img
         src={client_banner}
         alt="Hero Banner"
-        className="w-full lg:h-[650px] h-[460px] object-cover"
+        className="h-[460px] w-full object-cover lg:h-[650px]"
       />
-      <div className="absolute right-0 py-10 lg:py-[100px] top-0 w-full text-white">
-        <motion.h1 initial={{ scale: 0.9, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }} className="md:text-2xl text-[20px] lg:text-[40px] font-semibold text-center">
+      <div className="absolute right-0 top-0 w-full py-10 text-white lg:py-[100px]">
+        <motion.h1
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center text-[20px] font-semibold md:text-2xl lg:text-[40px]"
+        >
           What Our Clients Say
         </motion.h1>
-        <section className="md:py-[60px] py-10 xl:px-0   px-4">
+        <section className="px-4 py-10 md:py-[60px]   xl:px-0">
           <div>
             <Swiper
               modules={[Navigation, Autoplay, Pagination]}
@@ -50,7 +53,7 @@ const Clients = () => {
             >
               {clients_data.map((client) => (
                 <SwiperSlide
-                  className="w-full h-[290px] text-black bg-white rounded-md  px-6 py-10"
+                  className="h-[290px] w-full rounded-md bg-white px-6  py-10 text-black"
                   key={client.id}
                 >
                   <div className="flex items-center gap-1">
@@ -60,11 +63,11 @@ const Clients = () => {
                     <IoStar className="text-secondary" />
                     <IoStar className="text-secondary" />
                   </div>
-                  <h3 className="lg:pt-[36px] py-8 lg:pb-[46px] text-[16px] font-opensans">
+                  <h3 className="py-8 font-opensans text-[16px] lg:pb-[46px] lg:pt-[36px]">
                     {client.desc}
                   </h3>
 
-                  <div className="flex items-center justify-between relative">
+                  <div className="relative flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       <img
                         src={client.img}
@@ -83,7 +86,7 @@ const Clients = () => {
                     <img
                       src={quote_icon}
                       alt="quote"
-                      className="absolute w-16 md:w-20 md:h-[62px] md:-bottom-[27px] -bottom-[17px] right-0"
+                      className="absolute -bottom-[17px] right-0 w-16 md:-bottom-[27px] md:h-[62px] md:w-20"
                     />
                   </div>
                 </SwiperSlide>
