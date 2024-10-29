@@ -11,7 +11,7 @@ const SocialContact = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-2xl font-semibold md:text-[40px]"
+          className="text-[20px] font-semibold md:text-[40px]"
         >
           Connect with social media
         </motion.h1>

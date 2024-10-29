@@ -8,7 +8,7 @@ const FooterContent = () => {
       <Container>
         <div className="items-center justify-between text-center md:flex md:text-start">
           <div className="items-center gap-20 md:flex">
-            <Link to="/terms" className="text-[10px] md:text-[12px] hover:underline">
+            <Link to="/terms" className="text-[10px] md:text-[12px] md:mr-0 mr-3 hover:underline">
               Terms of Service
             </Link>
             <Link

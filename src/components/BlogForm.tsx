@@ -39,7 +39,13 @@ const BlogForm = () => {
           Leave a comment
         </h1>
         <form>
-          <div className="mb-4 flex flex-col gap-[10px] md:flex-row md:gap-4">
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="mb-4 flex flex-col gap-[10px] md:flex-row md:gap-4"
+          >
             <input
               type="text"
               placeholder="Your name*"
@@ -52,21 +58,29 @@ const BlogForm = () => {
               className="mt-1 w-full rounded border border-[#8A9399] p-3 font-opensans text-[12px] text-black outline-none md:mt-0 md:text-[14px]"
               required
             />
-          </div>
+          </motion.div>
           <div className="mb-4 flex flex-col">
-            <textarea
+            <motion.textarea
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
               placeholder="Type your message here"
               className="rounded border border-[#8A9399] p-3 font-opensans text-[12px] text-black outline-none md:text-[14px]"
               required
               rows={4}
-            ></textarea>
+            ></motion.textarea>
           </div>
-          <button
+          <motion.button
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             type="submit"
             className="rounded border border-[#8A9399] bg-white px-16 py-[14px] font-opensans text-[14px] font-semibold text-black transition-all hover:bg-primary hover:text-white md:px-7 md:text-[18px]"
           >
             Comment
-          </button>
+          </motion.button>
         </form>
       </div>
     </div>
