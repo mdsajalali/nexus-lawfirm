@@ -1,6 +1,13 @@
+import {motion} from "framer-motion"
 const ContactForm = () => {
   return (
-    <div className="relative w-[350px] rounded-md bg-primary p-5 md:w-[560px] md:p-[50px]">
+    <motion.div
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="relative w-[350px] rounded-md bg-primary p-5 md:w-[560px] md:p-[50px]"
+    >
       <h1 className="pb-5 text-2xl font-semibold text-white md:pb-10 md:text-[40px]">
         Get in Touch with Us
       </h1>
@@ -43,7 +50,7 @@ const ContactForm = () => {
           Send Message
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

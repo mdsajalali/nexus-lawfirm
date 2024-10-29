@@ -1,14 +1,27 @@
 import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const SocialContact = () => {
   return (
     <div className="pb-10 md:pb-[100px]">
       <div className="flex flex-wrap items-center justify-evenly gap-2">
-        <h1 className="text-2xl font-semibold md:text-[40px]">
+        <motion.h1
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-2xl font-semibold md:text-[40px]"
+        >
           Connect with social media
-        </h1>
-        <div className="flex items-center gap-3">
+        </motion.h1>
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex items-center gap-3"
+        >
           <BsTwitterX
             size={20}
             className="cursor-pointer transition-all hover:text-secondary"
@@ -25,7 +38,7 @@ const SocialContact = () => {
             size={20}
             className="cursor-pointer transition-all hover:text-secondary"
           />
-        </div>
+        </motion.div>
       </div>
       <div className="pt-10 md:pt-[100px]">
         <iframe
