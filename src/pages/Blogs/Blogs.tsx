@@ -9,6 +9,7 @@ import useBlogs from "../../hooks/useBlogs";
 import useBlogStore from "../../store/BlogsStore";
 import BlogsSidebar from "../../shared/BlogsSidebar";
 import BlogsSearch from "../../components/BlogsSearch";
+import { motion } from "framer-motion";
 
 interface BlogProps {
   img: string;
@@ -60,9 +61,15 @@ const Blogs = () => {
         <div className="grid grid-cols-1 gap-6 py-10 font-opensans lg:grid-cols-12 lg:py-[100px]">
           <div className="col-span-1 lg:col-span-8 xl:col-span-9">
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <h1 className="text-2xl font-semibold md:text-[40px]">
+              <motion.h1
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-2xl font-semibold md:text-[40px]"
+              >
                 Our Blogs
-              </h1>
+              </motion.h1>
               {/* Blog Search */}
               <div className="block lg:hidden">
                 <BlogsSearch
@@ -74,7 +81,7 @@ const Blogs = () => {
             <div className="grid grid-cols-1 gap-6 py-[50px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
               {currentBlogs.length > 0 ? (
                 currentBlogs.map((blog: BlogProps, idx: number) => (
-                  <BlogsCard key={idx} blog={blog} />
+                  <BlogsCard key={idx} blog={blog} idx={idx} />
                 ))
               ) : (
                 <p className="col-span-full text-center">No blogs available.</p>

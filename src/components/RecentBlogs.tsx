@@ -1,5 +1,6 @@
 import { IoMdTime } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 interface BlogProps {
   img: string;
   title: string;
@@ -9,10 +10,16 @@ interface BlogProps {
 
 interface RecentBlogsProps {
   blog: BlogProps;
+  idx: number;
 }
-const RecentBlogs = ({ blog }: RecentBlogsProps) => {
+const RecentBlogs = ({ blog, idx }: RecentBlogsProps) => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.3, delay: idx * 0.3 }}
+      viewport={{ once: true }}
+    >
       <div key={blog.id} className="flex items-center gap-6 pt-5 ">
         <Link to={`/blog/${blog.id}`}>
           <img
@@ -33,7 +40,7 @@ const RecentBlogs = ({ blog }: RecentBlogsProps) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 interface Blog {
   img: string;
@@ -13,11 +14,18 @@ interface Blog {
 
 interface BlogsCardProps {
   blog: Blog;
+  idx: number
 }
 
-const BlogsCard = ({ blog }: BlogsCardProps) => {
+const BlogsCard = ({ blog, idx }: BlogsCardProps) => {
   return (
-    <div className="rounded-lg border">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.3, delay: idx * 0.2 }}
+      viewport={{ once: true }}
+      className="rounded-lg border"
+    >
       <Link to={`/blog/${blog.id}`}>
         <img src={blog.img} alt="Blog" className="h-auto w-full" />
       </Link>
@@ -46,7 +54,7 @@ const BlogsCard = ({ blog }: BlogsCardProps) => {
           / <span>{blog.date}</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

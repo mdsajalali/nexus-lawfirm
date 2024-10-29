@@ -1,11 +1,18 @@
 import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { IoIosLink } from "react-icons/io";
+import {motion} from "framer-motion"
 
 const BlogForm = () => {
   return (
     <div>
-      <div className="mb-5 mt-10 flex items-center gap-3">
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="mb-5 mt-10 flex items-center gap-3"
+      >
         <BsTwitterX
           size={20}
           className="cursor-pointer transition-all hover:text-secondary"
@@ -26,7 +33,7 @@ const BlogForm = () => {
           size={20}
           className="cursor-pointer transition-all hover:text-secondary"
         />
-      </div>
+      </motion.div>
       <div className="    relative max-w-[560px]">
         <h1 className="text-2xl font-semibold text-white md:text-[40px] ">
           Leave a comment

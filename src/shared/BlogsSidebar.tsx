@@ -3,6 +3,7 @@ import BlogsSearch from "../components/BlogsSearch";
 import RecentBlogs from "../components/RecentBlogs";
 import useBlogs from "../hooks/useBlogs";
 import useBlogStore from "../store/BlogsStore";
+import {motion} from "framer-motion"
 
 interface BlogProps {
   img: string;
@@ -22,17 +23,31 @@ const BlogsSidebar = () => {
   return (
     <>
       {/* Blog Search */}
-      <div className="hidden lg:block">
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="hidden lg:block"
+      >
         <BlogsSearch
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
         />
-      </div>
+      </motion.div>
       {/* Recent Blogs */}
       <div className="pb-[100px] pt-10">
-        <h1 className="text-2xl font-semibold">Recent Blogs</h1>
-        {recentBlogs.map((blog: BlogProps) => (
-          <RecentBlogs key={blog.id} blog={blog} />
+        <motion.h1
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-2xl font-semibold"
+        >
+          Recent Blogs
+        </motion.h1>
+        {recentBlogs.map((blog: BlogProps, idx: number) => (
+          <RecentBlogs key={blog.id} blog={blog} idx={idx} />
         ))}
       </div>
       <BlogCategories
