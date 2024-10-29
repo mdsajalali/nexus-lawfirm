@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import Container from "../../shared/Container";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 interface FAQ {
   question: string;
@@ -47,22 +48,46 @@ const Faq = () => {
     <Container>
       <div className="grid grid-cols-1 gap-5 pb-20 md:pb-[100px] lg:grid-cols-2">
         <div className="max-w-[521px]">
-          <h1 className="text-2xl font-semibold md:text-[40px]">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold md:text-[40px]"
+          >
             Do You Have Any Questions?
-          </h1>
-          <p className="mt-3 font-opensans text-[16px] leading-[20px] md:text-[18px] md:leading-[24px]">
+          </motion.h1>
+          <motion.p
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-3 font-opensans text-[16px] leading-[20px] md:text-[18px] md:leading-[24px]"
+          >
             Find answers to some of the most common questions about our legal
             services and how we can help you.
-          </p>
+          </motion.p>
           <Link to="/contact">
-            <button className="mt-5 rounded border border-[#162834] bg-transparent px-16 py-[14px] font-opensans text-[14px] font-semibold text-black transition-all hover:bg-[#162834] hover:text-white md:mt-7 md:px-7 md:text-[18px]">
+            <motion.button
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="mt-5 rounded border border-[#162834] bg-transparent px-16 py-[14px] font-opensans text-[14px] font-semibold text-black transition-all hover:bg-[#162834] hover:text-white md:mt-7 md:px-7 md:text-[18px]"
+            >
               Contact Us
-            </button>
+            </motion.button>
           </Link>
         </div>
         <div>
           {faqData?.map((faq, index) => (
-            <div key={index}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.3 }}
+              viewport={{ once: true }}
+              key={index}
+            >
               <div
                 className={`my-3 flex cursor-pointer items-center justify-between rounded-md p-3 transition-all duration-300 ${
                   activeIndex === index
@@ -85,7 +110,7 @@ const Faq = () => {
                   {faq.answer}
                 </p>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

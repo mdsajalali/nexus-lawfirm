@@ -8,6 +8,8 @@ import immigration_law from "/images/practice-area/immigration_law.svg";
 import personal_injury from "/images/practice-area/personal_injury.svg";
 import real_estate_law from "/images/practice-area/real_estate_law.svg";
 import Container from "../../shared/Container";
+import { motion } from "framer-motion";
+
 const Legal_Expertise = () => {
   return (
     <Container>
@@ -17,18 +19,34 @@ const Legal_Expertise = () => {
       </div>
       <div className="py-10 md:py-20">
         <div className="mx-auto max-w-[804px] text-center">
-          <h1 className="text-2xl font-semibold md:text-[40px]">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold md:text-[40px]"
+          >
             Our Legal Expertise
-          </h1>
-          <p className="my-5 font-opensans text-[16px] leading-[30px] md:text-[20px]">
+          </motion.h1>
+          <motion.p
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="my-5 font-opensans text-[16px] leading-[30px] md:text-[20px]"
+          >
             Explore the diverse areas of law in which we provide dedicated,
             expert representation. We offer personalized solutions for each of
             our clients' unique needs.
-          </p>
+          </motion.p>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3  xl:grid-cols-4">
           {legalExpertisData?.map((data) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: data.id * 0.2 }}
+              viewport={{ once: true }}
               key={data.id}
               className="max-w-[424px] rounded-md border  border-[#D0D4D6] bg-white px-5 pb-5 pt-10  text-center font-opensans transition-all duration-300 hover:scale-95 hover:bg-primary  hover:text-white"
             >
@@ -43,7 +61,7 @@ const Legal_Expertise = () => {
               <p className="py-4 text-[14px] leading-5 md:py-7 md:text-[16px] md:leading-[24px]">
                 {data?.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

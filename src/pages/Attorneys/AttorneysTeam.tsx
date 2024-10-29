@@ -13,6 +13,7 @@ import attorney_nine from "/images/our-teams/attorney_nine.png";
 import attorney_ten from "/images/our-teams/attorney_ten.png";
 import attorney_eleven from "/images/our-teams/attorney_eleven.png";
 import attorney_twelve from "/images/our-teams/attorney_twelve.png";
+import {motion} from "framer-motion"
 
 const AttorneysTeam = () => {
   return (
@@ -23,14 +24,26 @@ const AttorneysTeam = () => {
       </div>
       <div className="py-10 md:py-20">
         <div className="mx-auto max-w-[804px] text-center">
-          <h1 className="text-2xl font-semibold md:text-[40px]">
+          <motion.h1
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold md:text-[40px]"
+          >
             Meet Our Legal Experts
-          </h1>
-          <p className="my-3 font-opensans text-[16px] leading-5 md:my-5 md:text-[20px] md:leading-[30px]">
+          </motion.h1>
+          <motion.p
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="my-3 font-opensans text-[16px] leading-5 md:my-5 md:text-[20px] md:leading-[30px]"
+          >
             Our team of highly skilled attorneys is dedicated to providing
             exceptional legal services across various practice areas. Get to
             know the professionals who will be handling your case.
-          </p>
+          </motion.p>
         </div>
         <div className="grid grid-cols-2 gap-3 pt-4 md:grid-cols-3 md:gap-6 md:pt-8 lg:grid-cols-4 ">
           {attorneys?.map((attorney) => (

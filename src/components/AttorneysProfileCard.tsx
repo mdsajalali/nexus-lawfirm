@@ -4,6 +4,7 @@ import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import HeroSidebar from "./HeroSidebar";
+import { motion } from "framer-motion";
 
 interface User {
   id: number;
@@ -43,75 +44,169 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
       <div className="grid grid-cols-1 gap-10 py-10 font-opensans md:py-20 lg:grid-cols-12 lg:gap-[100px]">
         <div className="  col-span-1 lg:col-span-7">
           <div>
-            <h1 className="text-2xl font-bold">About</h1>
-            <p className="mt-2 text-gray-700">{user.about.desc_one}</p>
-            <p className="mt-2 text-gray-700">{user.about.desc_two}</p>
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-2xl font-bold"
+            >
+              About
+            </motion.h1>
+            <motion.p
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mt-2 text-gray-700"
+            >
+              {user.about.desc_one}
+            </motion.p>
+            <motion.p
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mt-2 text-gray-700"
+            >
+              {user.about.desc_two}
+            </motion.p>
           </div>
 
           <div>
-            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-5 text-xl font-semibold lg:mt-5"
+            >
               Practice Areas
-            </h1>
+            </motion.h1>
             {user.practice_areas.map((area, idx) => (
-              <div key={idx} className="flex items-center gap-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: idx * 0.2 }}
+                viewport={{ once: true }}
+                key={idx}
+                className="flex items-center gap-2"
+              >
                 <IoMdCheckboxOutline className="text-secondary" size={20} />
                 <span className="font-opensans text-[16px]">{area}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           <div>
-            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-5 text-xl font-semibold lg:mt-5"
+            >
               Experience and Achievements
-            </h1>
+            </motion.h1>
             {user.experience_and_achievements.map((achievement, idx) => (
-              <div key={idx} className="flex items-center gap-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: idx * 0.2 }}
+                viewport={{ once: true }}
+                key={idx}
+                className="flex items-center gap-2"
+              >
                 <IoMdCheckboxOutline className="text-secondary" size={20} />
                 <span className="font-opensans text-[16px]">{achievement}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           <div>
-            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-5 text-xl font-semibold lg:mt-5"
+            >
               Education Milestones
-            </h1>
+            </motion.h1>
             {user.education_milestones.map((milestone, idx) => (
-              <div key={idx}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: idx * 0.2 }}
+                viewport={{ once: true }}
+                key={idx}
+              >
                 <h2 className="font-semibold">
                   {milestone.degree} ({milestone.years})
                 </h2>
                 <h3 className="text-gray-600">{milestone.university}</h3>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           <div>
-            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-5 text-xl font-semibold lg:mt-5"
+            >
               Professional Affiliations
-            </h1>
+            </motion.h1>
             {user.professional_affiliations.map((affiliation, idx) => (
-              <div key={idx} className="flex items-center gap-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: idx * 0.2 }}
+                viewport={{ once: true }}
+                key={idx}
+                className="flex items-center gap-2"
+              >
                 <IoMdCheckboxOutline className="text-secondary" size={20} />
                 <span className="font-opensans text-[16px]">{affiliation}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           <div>
-            <h1 className="mt-5 text-xl font-semibold lg:mt-5">
+            <motion.h1
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-5 text-xl font-semibold lg:mt-5"
+            >
               Awards and Honors
-            </h1>
+            </motion.h1>
             {user.awards_and_honors.map((award, idx) => (
-              <div key={idx} className="flex items-center gap-2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: idx * 0.2 }}
+                viewport={{ once: true }}
+                key={idx}
+                className="flex items-center gap-2"
+              >
                 <IoMdCheckboxOutline className="text-secondary" size={20} />
                 <span className="font-opensans text-[16px]">{award}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
-        <div className="relative col-span-1 flex flex-col items-center text-center text-white lg:col-span-5">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative col-span-1 flex flex-col items-center text-center text-white lg:col-span-5"
+        >
           <img
             src={user.user.img}
             alt="Profile"
@@ -145,7 +240,7 @@ const AttorneysProfileCard = ({ users }: AttorneysProfileCardProps) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
